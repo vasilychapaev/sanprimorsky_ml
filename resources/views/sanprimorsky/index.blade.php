@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+
+
+    <link rel="stylesheet" href="{{ asset('js/jqueryui/jquery-ui.css') }}">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
+
 </head>
 <body>
 <div class="page">
@@ -82,10 +89,10 @@
                                     <div class="row-fluid">
                                         <label>Выберите возможные даты бронирования</label>
                                         <div class="col-sm-6">
-                                            <input type="text" name="datestart" id="datep-on" class="date hasDatepicker" placeholder="c __.__.____">
+                                            <input type="text" name="datestart" id="datep-on" class="date js_datepicker" placeholder="c __.__.____">
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" name="datefinish" id="datep-off" class="date hasDatepicker" placeholder="до __.__.____" >
+                                            <input type="text" name="datefinish" id="datep-off" class="date js_datepicker" placeholder="до __.__.____" >
                                         </div>
                                     </div>
                                     {{--<div class="row-fluid">
@@ -877,7 +884,7 @@
                                         <input type="text" name="datefinish" id="datep-off3" class="date" placeholder="до __.__.____">
                                     </div>
                                 </div>
-                                <div class="row-fluid">
+                                {{--<div class="row-fluid">
                                     <div class="col-sm-8 col-sm-offset-2">
                                         <label>Выберите лечебный профиль:</label>
                                         <div class="clearfix"></div>
@@ -893,7 +900,7 @@
                                             <option value="Костно-мышечные болезни">Костно-мышечные болезни</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div>--}}
                                 <div class="row-fluid">
                                     <label>Выберите количество отдыхающих:</label>
                                     <div class="clearfix"></div>
@@ -1011,7 +1018,10 @@
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+{{--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>--}}
+<script src="{{ asset('js/jqueryui/jquery-ui.min.js') }}" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="js/script.js"></script>

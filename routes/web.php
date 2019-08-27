@@ -20,5 +20,15 @@
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', 'LandingController@sanprimorsky');
+Route::get('/', function() {
+    dd('land current');
+});
+
+Route::get('/1', 'LandingController@sanprimorsky');
 Route::post('/send', 'LandingController@send');
+
+Route::post('/webpay/order', 'WebpayController@order');
+Route::post('/webpay/return', 'WebpayController@return');
+Route::get('/webpay/cancel', 'WebpayController@cancel');
+Route::get('/webpay/notify', 'WebpayController@notify'); // ? get/post
+Route::get('/webpay/check', 'WebpayController@check'); // надо? или в return > check

@@ -20,9 +20,11 @@
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', function() {
-    dd('land current');
-});
+//Route::get('/', function() {
+//    dd('land current');
+//});
+
+Route::get('/', 'LandingController@sanprimorskyOld');
 
 Route::get('/1', 'LandingController@sanprimorsky');
 Route::post('/send', 'LandingController@send');

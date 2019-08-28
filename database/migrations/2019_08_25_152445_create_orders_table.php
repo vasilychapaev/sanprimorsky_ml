@@ -16,9 +16,8 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-
-            $table->integer('adult_cnt')->nullable()->default(0);
-            $table->integer('child_cnt')->nullable()->default(0);
+            $table->integer('adult_count')->nullable()->default(0);
+            $table->integer('child_count')->nullable()->default(0);
             $table->integer('hotel_id')->nullable()->default(0);
             $table->string('hotel_name')->nullable()->default('');
             $table->integer('room_id')->nullable()->default(0);
@@ -28,8 +27,10 @@ class CreateOrdersTable extends Migration
             $table->string('fio')->nullable()->default('');
             $table->string('phone')->nullable()->default('');
             $table->string('email')->nullable()->default('');
-            $table->float('sum')->nullable()->default(0);
+            $table->float('amount')->nullable()->default(0);
+            $table->integer('transaction_id')->nullable()->default(0);
 
+            $table->string('status')->nullable()->default('');
         });
     }
 

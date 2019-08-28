@@ -9,6 +9,7 @@ class LandingController extends Controller
 {
     public function sanprimorskyOld()
     {
+        dd(md5('ghkgo35'));
         return view('sanprimorsky_old.index');
     }
 

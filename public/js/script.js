@@ -51,8 +51,11 @@ $(document).ready(function () {
             url: '/webpay/order',
             data: form.serialize(),
             headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-            success: function (data) {
-                alert(data.message);
+            success: function (json) {
+                if (json.status == 'ok') {
+                    $('#webpay_form').html(json.html);
+                    setTimeout($('#webpay_form').submit(), 1000);
+                }
             }
         });
     })

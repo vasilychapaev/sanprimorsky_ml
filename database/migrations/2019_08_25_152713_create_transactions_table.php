@@ -18,6 +18,8 @@ class CreateTransactionsTable extends Migration
             $table->timestamps();
 
             $table->integer('order_id')->nullable()->default(0);
+            $table->string('action')->nullable()->default('');
+            $table->string('data')->nullable()->default('');
             $table->string('transaction_id')->nullable()->default('');
             $table->string('transaction_result')->nullable()->default('');
             $table->string('response')->nullable()->default('');

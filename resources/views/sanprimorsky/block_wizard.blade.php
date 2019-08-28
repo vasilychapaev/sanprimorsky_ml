@@ -5,40 +5,39 @@
         </h2>
         <div class="calc-form">
             <div class="wrapper">
-                <form action="https://sandbox.webpay.by" id="wizard" method="post">
+                <form action="{{ config('webpay.billing_url') }}" id="webpay_form" method="post">
 
-                    <span id="hidden">
-                        {{--
-                        <input type='hidden' name='*scart'>
-                        <input type='hidden' name='wsb_storeid' value='999080791'>
-                        <input type='hidden' name='wsb_store' value='Санаториум/Приморский'>
-                        <input type='hidden' name='wsb_order_num' value='ORDER_1234'>
-                        <input type='hidden' name='wsb_currency_id' value='BYN'>
-                        <input type='hidden' name='wsb_version' value='2'>
-                        <input type='hidden' name='wsb_language_id' value='russian'>
-                        <input type='hidden' name='wsb_seed' value='11123232001'>
-                        <input type='hidden' name='wsb_signature' value='8d4395dab7598c5f4b94d5bc4780f4af '>
-                        <input type='hidden' name='wsb_return_url' value='http://yoursite.com/complete'>
-                        <input type='hidden' name='wsb_cancel_return_ url' value='http://yoursite.com/cancel'>
-                        <input type='hidden' name='wsb_notify_url' value='http://yoursite.com/notify'>
-                        <input type='hidden' name='wsb_test' value='1'>
-                        <input type='hidden' name='wsb_customer_ name' value='Иванов Петр Петрович'>
-                        <input type='hidden' name='wsb_customer_ address' value='Минск пр. Независимости д.1 кв.2'>
-                        <input type='hidden' name='wsb_service_date' value='Доставка до 1 января 2016 года'>
-                        <input type='hidden' name='wsb_invoice_item_ name[0]' value='Товар 1'>
-                        <input type='hidden' name='wsb_invoice_item_ name[1]' value='Товар 2'>
-                        <input type='hidden' name='wsb_invoice_item_ quantity[0]' value='2'>
-                        <input type='hidden' name='wsb_invoice_item_ quantity[1]' value='1'>
-                        <input type='hidden' name='wsb_tax' value='1'>
-                        <input type='hidden' name='wsb_shipping_ name' value='Доставка курьером'>
-                        <input type='hidden' name='wsb_shipping_ price' value='2'>
-                        <input type='hidden' name='wsb_discount_ name' value='Дисконтная карта'>
-                        <input type='hidden' name='wsb_discount_ price' value='0.58'>
-                        <input type='hidden' name='wsb_discount_ promo_code' value='ABC001'>
-                        <input type='hidden' name='wsb_total' value='28.42'>
-                        --}}
-                    </span>
+                    {{--<input type='hidden' name='*scart'>
+                    <input type='hidden' name='wsb_storeid' value='999080791'>
+                    <input type='hidden' name='wsb_store' value='Санаториум/Приморский'>
+                    <input type='hidden' name='wsb_order_num' value='ORDER_1234'>
+                    <input type='hidden' name='wsb_currency_id' value='BYN'>
+                    <input type='hidden' name='wsb_version' value='2'>
+                    <input type='hidden' name='wsb_language_id' value='russian'>
+                    <input type='hidden' name='wsb_seed' value='11123232001'>
+                    <input type='hidden' name='wsb_signature' value='8d4395dab7598c5f4b94d5bc4780f4af '>
+                    <input type='hidden' name='wsb_return_url' value='http://yoursite.com/complete'>
+                    <input type='hidden' name='wsb_cancel_return_ url' value='http://yoursite.com/cancel'>
+                    <input type='hidden' name='wsb_notify_url' value='http://yoursite.com/notify'>
+                    <input type='hidden' name='wsb_test' value='1'>
+                    <input type='hidden' name='wsb_customer_ name' value='Иванов Петр Петрович'>
+                    <input type='hidden' name='wsb_customer_ address' value='Минск пр. Независимости д.1 кв.2'>
+                    <input type='hidden' name='wsb_service_date' value='Доставка до 1 января 2016 года'>
+                    <input type='hidden' name='wsb_invoice_item_ name[0]' value='Товар 1'>
+                    <input type='hidden' name='wsb_invoice_item_ name[1]' value='Товар 2'>
+                    <input type='hidden' name='wsb_invoice_item_ quantity[0]' value='2'>
+                    <input type='hidden' name='wsb_invoice_item_ quantity[1]' value='1'>
+                    <input type='hidden' name='wsb_tax' value='1'>
+                    <input type='hidden' name='wsb_shipping_ name' value='Доставка курьером'>
+                    <input type='hidden' name='wsb_shipping_ price' value='2'>
+                    <input type='hidden' name='wsb_discount_ name' value='Дисконтная карта'>
+                    <input type='hidden' name='wsb_discount_ price' value='0.58'>
+                    <input type='hidden' name='wsb_discount_ promo_code' value='ABC001'>
+                    <input type='hidden' name='wsb_total' value='28.42'>--}}
+                </form>
 
+
+                <form action="#" id="wizard" method="post">
 
                     <h4></h4>
                     <section>
@@ -214,6 +213,7 @@
                                     <td data-title="Total">
                                         <span class="woocommerce-Price-amount amount">
                                             76800 руб
+                                            <input type="hidden" name="amount" value="76">
                                         </span>
                                     </td>
                                 </tr>

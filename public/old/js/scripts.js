@@ -26,7 +26,7 @@ $('form').submit(function(){
         var m_data=jQuery(this).serialize();
         jQuery.ajax({
             type: 'POST',
-            url: '/send.php',
+            url: '/old/send',
             data: m_data,
             success: function(result){
                 var results=(result);

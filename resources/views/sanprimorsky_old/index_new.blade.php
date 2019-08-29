@@ -8,7 +8,8 @@
     <meta name="description" content="Приобретайте путёвки в санаторий Приморский напрямую и без переплат. Официальный отдел реализации путёвок санатория Приморский Беларусь. У нас гарантия лучшей цены. Лечение в медицинском центре управления делами президента РБ. Более 20 лечебных процедур. Заходите!">
     <meta name="robots" content="index,follow" />
     <meta name="keywords" content="санаторий в белоруссии, санаторий Приморский, купить путёвку в санаторий, оздоровительный санаторий, Санаторий приморский беларусь, санаторий в белоруссии лечение, санаторий в белоруссии цены" />
-    <link rel="stylesheet" href="/old/css/bootstrap.min.css">
+    <link rel="canonical" href="http://sanprimorsky.by/index.html" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!--
     <style>.async-hide { opacity: 0 !important} </style>
     <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -41,7 +42,7 @@
             <div class="col-lg-6 col-md-4">
                 <div class="logo text-center">
                     <a href="">
-                        <img src="/old/img/logo.png" alt="logo" class="image-fluid">
+                        <img src="/img/logo.png" alt="logo" class="image-fluid">
                     </a>
                     <div class="clearfix"></div>
                     <span>Сайт санатория "Приморский"</span>
@@ -50,9 +51,9 @@
             <div class="col-lg-6 col-md-8">
                 <div class="row-fluid">
                     <div class="col-lg-6 col-md-6 col-sm-6 pad-top">
-                        <img class="flag" src="/old/img/flag-ru.png" alt="Телефон санатория Приморский для россиян"><span class="number" ><a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></span>
+                        <img class="flag" src="/img/flag-ru.png" alt="Телефон санатория Приморский для россиян"><span class="number" ><a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></span>
                         <div class="clearfix"></div>
-                        <img class="flag" src="/old/img/flag-bl.png" alt="Белорусский телефон отдела реализации путёвок санатория Приморский"><span class="number"><a href="tel:+375 29 107 44 00" >+375 29 107 44 00</a></span>
+                        <img class="flag" src="/img/flag-bl.png" alt="Белорусский телефон отдела реализации путёвок санатория Приморский"><span class="number"><a href="tel:+375 29 107 44 00" >+375 29 107 44 00</a></span>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 pad-top but text-center">
                         <a href="#" class="button-callback call-back-js" data-toggle="modal" data-target="#consult">Бесплатная консультация</a>
@@ -71,7 +72,7 @@
                 <!--   <h1>Проведите отдых с пользой для здоровья
                   в популярном <span>санатории Белоруссии «Приморский»</span></h1>-->
                 <div class="after-title">
-                    <img src="/old/img/best.png" alt="Гости санатория приморский">
+                    <img src="/img/best.png" alt="Гости санатория приморский">
                     <h3 class="bg-white">В нашем санатории регулярно оздоравливаются врачи Белоруссии и РФ</h3>
                     <h3 class="bg-grad">Гарантия лучшей цены на этот санаторий</h3>
                 </div>
@@ -176,7 +177,7 @@
             <div class="row-fluid">
                 <div class="col-xs-12 slide-block">
                     <div class="stars">
-                        <img src="/old/img/stars.jpg" alt="Отзывы о санатории Приморский">
+                        <img src="/img/stars.jpg" alt="Отзывы о санатории Приморский">
                     </div>
                     <div class="slider carousel slide" id="carousel-example-generic" data-ride="carousel">
                         <ul class="slides carousel-inner">
@@ -204,10 +205,10 @@
                         </ul>
 
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <img src="/old/img/arrow-left.png" alt="Санаторий Приморский левее">
+                            <img src="/img/arrow-left.png" alt="Санаторий Приморский левее">
                         </a>
                         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <img src="/old/img/arrow-right.png" alt="Санаторий приморский правее">
+                            <img src="/img/arrow-right.png" alt="Санаторий приморский правее">
                         </a>
                     </div>
                 </div>
@@ -226,7 +227,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/volna.png" alt="Приморский на Минском Море">
+                            <img src="/img/volna.png" alt="Приморский на Минском Море">
                         </div>
                         <div class="text">
                             Находится прямо на Минском Море
@@ -243,7 +244,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/markers.png" alt="Приморский 10 км от Минска">
+                            <img src="/img/markers.png" alt="Приморский 10 км от Минска">
                         </div>
                         <div class="text">
                             Санаторий в 10 км от Минска
@@ -261,7 +262,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/fonenedo.png" alt="Приморский Лечебная база">
+                            <img src="/img/fonenedo.png" alt="Приморский Лечебная база">
                         </div>
                         <div class="text">Большая лечебная база</div>
                     </div>
@@ -277,7 +278,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/juice.png" alt="Санаторий приморский Без очередей на процедуры">
+                            <img src="/img/juice.png" alt="Санаторий приморский Без очередей на процедуры">
                         </div>
                         <div class="text">
                             Без очередей
@@ -295,7 +296,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/pole.png" alt="Санаторий Приморский Чистый и полезный воздух">
+                            <img src="/img/pole.png" alt="Санаторий Приморский Чистый и полезный воздух">
                         </div>
                         <div class="text">
                             Чистый и полезный воздух
@@ -312,7 +313,7 @@
                 <div class="item">
                     <div class="title">
                         <div class="icon">
-                            <img src="/old/img/kopilka.png" alt="Санаторий Приморский Цены">
+                            <img src="/img/kopilka.png" alt="Санаторий Приморский Цены">
                         </div>
                         <div class="text">
                             Действительно невысокие цены
@@ -344,7 +345,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="item">
 
-                            <img src="/old/img/cedr.png" alt="" style="padding-top: 30px;">
+                            <img src="/img/cedr.png" alt="" style="padding-top: 30px;">
 
                         <div class="text">
                             КЕДРОВАЯ БОЧКА</br>
@@ -354,7 +355,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="item">
 
-                            <img src="/old/img/roll.png" alt="" style="padding-top: 30px;">
+                            <img src="/img/roll.png" alt="" style="padding-top: 30px;">
 
                         <div class="text">
                             РОЛШЕЙП
@@ -365,7 +366,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="item">
 
-                            <img src="/old/img/perl.png" alt="" style="padding-top: 30px;">
+                            <img src="/img/perl.png" alt="" style="padding-top: 30px;">
 
                         <div class="text">
                             ЖЕМЧУЖНАЯ ВАННА
@@ -431,7 +432,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="item">
                             <div class="icon">
-                                <img src="/old/img/calendar.png" alt="">
+                                <img src="/img/calendar.png" alt="">
                             </div>
                             <div class="text">
                                 c 25, 27, 29 декабря<br>
@@ -441,7 +442,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="item">
                             <div class="icon">
-                                <img src="/old/img/mapmap.png" alt="">
+                                <img src="/img/mapmap.png" alt="">
                             </div>
                             <div class="text">
                                 Экскурсии<br>по Белоруссии
@@ -451,7 +452,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="item">
                             <div class="icon">
-                                <img src="/old/img/iscri.png" alt="">
+                                <img src="/img/iscri.png" alt="">
                             </div>
                             <div class="text">
                                 Большая<br>шоу-программа
@@ -577,7 +578,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="buttons">
-                            <button id="step1" class="step-prev"><img src="/old/img/step-prev.png" alt="Дальше"></button>
+                            <button id="step1" class="step-prev"><img src="/img/step-prev.png" alt="Дальше"></button>
                             <button id="step3" class="step-next">Далее</button>
                         </div>
                     </div>
@@ -603,7 +604,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="buttons">
-                            <button id="step2-prev" class="step-prev"><img src="/old/img/step-prev.png" alt="Назад"></button>
+                            <button id="step2-prev" class="step-prev"><img src="/img/step-prev.png" alt="Назад"></button>
                             <button id="step4" class="step-next">Далее</button>
                         </div>
                     </div>
@@ -629,7 +630,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="buttons">
-                            <button id="step3-prev" class="step-prev"><img src="/old/img/step-prev.png" alt="Назад"></button>
+                            <button id="step3-prev" class="step-prev"><img src="/img/step-prev.png" alt="Назад"></button>
                             <button id="step5" class="step-next">Далее</button>
                         </div>
                     </div>
@@ -642,9 +643,9 @@
                         <div class="row-fluid">
                             <div class="col-xs-12">
                                 <div class="type-svias">
-                                    <input type="radio" name="type_svias" id="viber" value="Viber"><label for="viber"><span class="radio viber"><img src="/old/img/viber.png" alt="Звоните Вайбер"></span></label>
-                                    <input type="radio" name="type_svias" id="wa" value="WhatsApp"><label for="wa"><span class="radio watsapp"><img src="/old/img/wa.png" alt="Звоните вотсап"></span></label>
-                                    <input type="radio" name="type_svias" id="telega" value="Telegram"><label for="telega"><span class="radio telega"><img src="/old/img/telega.png" alt="звоните телеграмм"></span></label>
+                                    <input type="radio" name="type_svias" id="viber" value="Viber"><label for="viber"><span class="radio viber"><img src="/img/viber.png" alt="Звоните Вайбер"></span></label>
+                                    <input type="radio" name="type_svias" id="wa" value="WhatsApp"><label for="wa"><span class="radio watsapp"><img src="/img/wa.png" alt="Звоните вотсап"></span></label>
+                                    <input type="radio" name="type_svias" id="telega" value="Telegram"><label for="telega"><span class="radio telega"><img src="/img/telega.png" alt="звоните телеграмм"></span></label>
                                     <input type="radio" name="type_svias" id="phone" value="phone" checked><label for="phone"><span class="radio phone">По телефону</span></label>
                                 </div>
                             </div>
@@ -658,7 +659,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="buttons">
-                            <button id="step4-prev" class="step-prev"><img src="/old/img/step-prev.png" alt="Дальше"></button>
+                            <button id="step4-prev" class="step-prev"><img src="/img/step-prev.png" alt="Дальше"></button>
                             <button type="submit" class="finish">Подобрать варианты</button>
 
                             <div class="clearfix"></div>
@@ -677,13 +678,13 @@
     <div class="container">
         <div class="row-fluid">
             <div class="text-center">
-                <img src="/old/img/arrow-top.png" alt="Гарантия низких цен на путёвки" class="arrow-top">
+                <img src="/img/arrow-top.png" alt="Гарантия низких цен на путёвки" class="arrow-top">
             </div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6 no-padding">
                 <div class="block-info text-center">
-                    <img src="/old/img/gar.png" alt="Гарантируем низкие цены на приморский" class="gar">
+                    <img src="/img/gar.png" alt="Гарантируем низкие цены на приморский" class="gar">
                     <div class="green">Мы официальный отдел реализации путёвок санатория Приморский!</div>
                     <div>Не покупайте путевки у перекупов</div>
                     <div class="red">Гарантируем лучшую стоимость</div>
@@ -691,7 +692,7 @@
                     <div class="border"></div>
                     <div class="phone">либо звоните по телефону</div>
                     <div class="phone-num">
-                        <img src="/old/img/icon-phone.png" alt="Номер телефона для Россиян"><a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></div>
+                        <img src="/img/icon-phone.png" alt="Номер телефона для Россиян"><a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></div>
                 </div>
                 <div class="name">
                     Ирина Нефедова<br>
@@ -707,7 +708,7 @@
         <div class="container">
             <div class="title-container">
 			<div class="" style="padding: 0px 0px 20px 0px">
-			<img src="/old/img/gerb.png" alt="Герб республики беларусь" width="150px">
+			<img src="/img/gerb.png" alt="Герб республики беларусь" width="150px">
 			</div>
 			<div class="title-container-text">
 			<span>Официальный партнер</span> <br>Республиканского клинического медицинского центра <br>Управления делами президента Республики Беларусь
@@ -773,7 +774,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img1.jpg" alt="Стоунтерапия в Приморском">
+                        <img src="/img/img1.jpg" alt="Стоунтерапия в Приморском">
                     </div>
                     <div class="title">
                         Стоунтерапия<br>
@@ -784,7 +785,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img2.jpg" alt="Водные процедуры в Приморском">
+                        <img src="/img/img2.jpg" alt="Водные процедуры в Приморском">
                     </div>
                     <div class="title">
                         Водные процедуры<br>
@@ -795,7 +796,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img3.jpg" alt="Иглорефлексотерапия в Приморском">
+                        <img src="/img/img3.jpg" alt="Иглорефлексотерапия в Приморском">
                     </div>
                     <div class="title">
                         Иглорефлексотерапия,<br>
@@ -806,7 +807,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img4.jpg" alt="Кедровая бочка в Приморском">
+                        <img src="/img/img4.jpg" alt="Кедровая бочка в Приморском">
                     </div>
                     <div class="title">
                         Кедровая бочка<br>
@@ -817,7 +818,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img5.jpg" alt="Сухое вытяжение в Приморском">
+                        <img src="/img/img5.jpg" alt="Сухое вытяжение в Приморском">
                     </div>
                     <div class="title">
                         Сухое вытяжение<br>
@@ -828,7 +829,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img6.jpg" alt="Сауна с мини-бассейном в приморском">
+                        <img src="/img/img6.jpg" alt="Сауна с мини-бассейном в приморском">
                     </div>
                     <div class="title">
                         Сауна с<br>
@@ -839,7 +840,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img7.jpg" alt="Бесплатные выезды в Минск в Приморском">
+                        <img src="/img/img7.jpg" alt="Бесплатные выезды в Минск в Приморском">
                     </div>
                     <div class="title">
                         Бесплатные выезды<br>
@@ -850,7 +851,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img8.jpg" alt="Хвойные, йодобромные и жемчужные ванны в приморском">
+                        <img src="/img/img8.jpg" alt="Хвойные, йодобромные и жемчужные ванны в приморском">
                     </div>
                     <div class="title">
                         Хвойные, йодобромные,<br>
@@ -861,7 +862,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img9.jpg" alt="Детские площадки в Приморском">
+                        <img src="/img/img9.jpg" alt="Детские площадки в Приморском">
                     </div>
                     <div class="title">
                         Детские площадки<br>
@@ -872,7 +873,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img10.jpg" alt="Зимняя рыбалка в Приморском">
+                        <img src="/img/img10.jpg" alt="Зимняя рыбалка в Приморском">
                     </div>
                     <div class="title">
                         Зимняя и<br>
@@ -883,7 +884,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img11.jpg" alt="Кедровая бочка и спа капсула в Приморском">
+                        <img src="/img/img11.jpg" alt="Кедровая бочка и спа капсула в Приморском">
                     </div>
                     <div class="title">
                         Кедровая бочка<br>
@@ -894,7 +895,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="item">
                     <div class="image">
-                        <img src="/old/img/img12.jpg" alt="5ти разовое заказное питание в приморском">
+                        <img src="/img/img12.jpg" alt="5ти разовое заказное питание в приморском">
                     </div>
                     <div class="title">
                         Заказное 5-ти разовое<br>
@@ -917,7 +918,7 @@
         <div class="container">
             <h2 class="text-center">
                 Посмотрите особенности Приморского санатория:
-                <img src="/old/img/arrow-bottom-green.png" alt="Зелёная стрелка">
+                <img src="/img/arrow-bottom-green.png" alt="Зелёная стрелка">
             </h2>
             <div class="blocks">
                 <div class="row-fluid">
@@ -941,7 +942,7 @@
                                             <span class="text-bold">В данном разделе вы можете увидеть актуальные скидки на путёвки санатория "Приморский".</span>
                                             <ul class="marker-check">
 											<li><span class="top">Прогулка на яхте по Минскому морю <span>В ПОДАРОК!!!</span></span></li>
-                                               <li><span class="top">Посещение аквапарка <span>В ПОДАРОК!!!</span></span></li>
+                                               <!-- <li><span class="top">Посещение аквапарка <span>В ПОДАРОК!!!</span></span></li> -->
 <!--                                                <li><span class="top"><span>Бесплатный трансфер</span> с вокзала</span></li>
                                                 <li><span class="top">Скидки для пенсионеров</span></li>
                                             </ul>
@@ -980,10 +981,10 @@
                                     </div>
                                     <div class="row-fluid">
                                         <div class="images text-center">
-                                            <a data-fancybox="gallery" href="/old/img/Food/dinner2_1-min.jpg"><img src="/old/img/Food/mini/dinner2_1_min.FaFWe.jpg" alt="Ужин в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Food/dinner2_2-min.jpg"><img src="/old/img/Food/mini/dinner2_2_min.rs65e.jpg" alt="Обед в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Food/evant1_0-min.jpg"><img src="/old/img/Food/mini/evant1_0_min.SSuAx.jpg" alt="Завтрак в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Food/img_6422_0-min.jpg"><img src="/old/img/Food/mini/img_6422_0_min.bjKcD.jpg" alt="Полдник в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Food/dinner2_1-min.jpg"><img src="/img/Food/mini/dinner2_1_min.FaFWe.jpg" alt="Ужин в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Food/dinner2_2-min.jpg"><img src="/img/Food/mini/dinner2_2_min.rs65e.jpg" alt="Обед в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Food/evant1_0-min.jpg"><img src="/img/Food/mini/evant1_0_min.SSuAx.jpg" alt="Завтрак в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Food/img_6422_0-min.jpg"><img src="/img/Food/mini/img_6422_0_min.bjKcD.jpg" alt="Полдник в санатории Приморский"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1016,11 +1017,11 @@
                                     </div>
                                     <div class="row-fluid">
                                         <div class="images text-center">
-                                            <a data-fancybox="gallery" href="/old/img/Rest/0917w-min.jpg"><img src="/old/img/Rest/mini/0917w_min.QNObX.jpg" alt="Пляж в санатории Приморской"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Rest/2c1a598b26e6712ae10ad3d8e6c6f8e6-min.jpg"><img src="/old/img/Rest/mini/2c1a598b26e6712ae10ad3d8e6c6f8e6_min.eYJn6.jpg" alt="Бассейн в санатории Приморской"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Rest/9941-1250-min.jpg"><img src="/old/img/Rest/mini/9941_1250_min.kCic9.jpg" alt="Бильярд в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Rest/c88dfbb547f0986635185abedc63bbd8-min.jpg"><img src="/old/img/Rest/mini/c88dfbb547f0986635185abedc63bbd8_min.zQbux.jpg" alt="Место для релакса в санатории Приморский"></a>
-											<a data-fancybox="gallery" href="/old/img/Rest/cfd185aa17fb9e0fcaa3ebeda1a7b23d-min.jpg"><img src="/old/img/Rest/mini/cfd185aa17fb9e0fcaa3ebeda1a7b23d_min.1Fo2A.jpg" alt="Баня в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Rest/0917w-min.jpg"><img src="/img/Rest/mini/0917w_min.QNObX.jpg" alt="Пляж в санатории Приморской"></a>
+                                            <a data-fancybox="gallery" href="/img/Rest/2c1a598b26e6712ae10ad3d8e6c6f8e6-min.jpg"><img src="/img/Rest/mini/2c1a598b26e6712ae10ad3d8e6c6f8e6_min.eYJn6.jpg" alt="Бассейн в санатории Приморской"></a>
+                                            <a data-fancybox="gallery" href="/img/Rest/9941-1250-min.jpg"><img src="/img/Rest/mini/9941_1250_min.kCic9.jpg" alt="Бильярд в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Rest/c88dfbb547f0986635185abedc63bbd8-min.jpg"><img src="/img/Rest/mini/c88dfbb547f0986635185abedc63bbd8_min.zQbux.jpg" alt="Место для релакса в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Rest/cfd185aa17fb9e0fcaa3ebeda1a7b23d-min.jpg"><img src="/img/Rest/mini/cfd185aa17fb9e0fcaa3ebeda1a7b23d_min.1Fo2A.jpg" alt="Баня в санатории Приморский"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1050,13 +1051,13 @@
                                     </div>
                                     <div class="row-fluid">
                                         <div class="images text-center">
-                                            <a data-fancybox="gallery" href="/old/img/Treatment/79947b57765b0bd8aeae26fa61aeb0c3-min.jpg"><img src="/old/img/Treatment/mini/79947b57765b0bd8aeae26fa61aeb0c3_min.loac6.jpg" alt="Джакузи в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Treatment/b2_0-min.jpg"><img src="/old/img/Treatment/mini/b2_0_min.Rj6o5.jpg" alt="Кедровая бочка в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Treatment/eol1-min.jpg"><img src="/old/img/Treatment/mini/eol1_min.zYaFG.jpg" alt="Процедуры в санатории Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Treatment/g5_3-min.jpg"><img src="/old/img/Treatment/mini/g5_3_min.56VQ3.jpg" alt="Процедуры в Приморском"></a>
-											<a data-fancybox="gallery" href="/old/img/Treatment/gryaz1-min.jpg"><img src="/old/img/Treatment/mini/gryaz1_min.Pdiyo.jpg" alt="Грязевое обёртывание в санатории Приморский"></a>
-											<a data-fancybox="gallery" href="/old/img/Treatment/shutterstock_151824476-min.jpg"><img src="/old/img/Treatment/mini/shutterstock_151824476_min.vbJ5G.jpg" alt="Спа капсула в санатории Приморский"></a>
-											<a data-fancybox="gallery" href="/old/img/Treatment/vanny1-min.jpg"><img src="/old/img/Treatment/mini/vanny1_min.ThVUj.jpg" alt="Гидрованны в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Treatment/79947b57765b0bd8aeae26fa61aeb0c3-min.jpg"><img src="/img/Treatment/mini/79947b57765b0bd8aeae26fa61aeb0c3_min.loac6.jpg" alt="Джакузи в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Treatment/b2_0-min.jpg"><img src="/img/Treatment/mini/b2_0_min.Rj6o5.jpg" alt="Кедровая бочка в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Treatment/eol1-min.jpg"><img src="/img/Treatment/mini/eol1_min.zYaFG.jpg" alt="Процедуры в санатории Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Treatment/g5_3-min.jpg"><img src="/img/Treatment/mini/g5_3_min.56VQ3.jpg" alt="Процедуры в Приморском"></a>
+											<a data-fancybox="gallery" href="/img/Treatment/gryaz1-min.jpg"><img src="/img/Treatment/mini/gryaz1_min.Pdiyo.jpg" alt="Грязевое обёртывание в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Treatment/shutterstock_151824476-min.jpg"><img src="/img/Treatment/mini/shutterstock_151824476_min.vbJ5G.jpg" alt="Спа капсула в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Treatment/vanny1-min.jpg"><img src="/img/Treatment/mini/vanny1_min.ThVUj.jpg" alt="Гидрованны в санатории Приморский"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1090,12 +1091,12 @@
                                     </div>
                                     <div class="row-fluid">
                                         <div class="images text-center">
-											<a data-fancybox="gallery" href="/old/img/Apport/9392-min.jpg"><img src="/old/img/Apport/mini/9392_min.0zf5w.jpg" alt="Люкс Санаторий Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Apport/img_9344-min.jpg"><img src="/old/img/Apport/mini/img_9344_min.mn8Aj.jpg" alt="Двухместный стандарт санаторий Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Apport/img_9382-min.jpg"><img src="/old/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="Двухкомнатный люкс в Приморском"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Apport/img_9407_0-min.jpg"><img src="/old/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="Гостинная в санатории Приморский"></a>
-											<a data-fancybox="gallery" href="/old/img/Apport/img_9415_0-min.jpg"><img src="/old/img/Apport/mini/img_9415_0_min.6Avx8.jpg" alt="Ванная комната в санатории Приморский"></a>
-											<a data-fancybox="gallery" href="/old/img/Apport/img_9453-min.jpg"><img src="/old/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="Кровать в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Apport/9392-min.jpg"><img src="/img/Apport/mini/9392_min.0zf5w.jpg" alt="Люкс Санаторий Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Apport/img_9344-min.jpg"><img src="/img/Apport/mini/img_9344_min.mn8Aj.jpg" alt="Двухместный стандарт санаторий Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Apport/img_9382-min.jpg"><img src="/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="Двухкомнатный люкс в Приморском"></a>
+                                            <a data-fancybox="gallery" href="/img/Apport/img_9407_0-min.jpg"><img src="/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="Гостинная в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Apport/img_9415_0-min.jpg"><img src="/img/Apport/mini/img_9415_0_min.6Avx8.jpg" alt="Ванная комната в санатории Приморский"></a>
+											<a data-fancybox="gallery" href="/img/Apport/img_9453-min.jpg"><img src="/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="Кровать в санатории Приморский"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1113,8 +1114,8 @@
                                     </div>
                                     <div class="row-fluid">
                                         <div class="images text-center">
-                                            <a data-fancybox="gallery" href="/old/img/Transfer/f09b84b0b3f931732cbda3776fd9e043-min.jpg"><img src="/old/img/Transfer/mini/f09b84b0b3f931732cbda3776fd9e043_min.ezgRW.jpg" alt="Трансфер до санатория Приморский"></a>
-                                            <a data-fancybox="gallery" href="/old/img/Transfer/reno2-20_0-min.jpg"><img src="/old/img/Transfer/mini/reno2_20_0_min.udVH8.jpg" alt="Трансфер до санатория Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Transfer/f09b84b0b3f931732cbda3776fd9e043-min.jpg"><img src="/img/Transfer/mini/f09b84b0b3f931732cbda3776fd9e043_min.ezgRW.jpg" alt="Трансфер до санатория Приморский"></a>
+                                            <a data-fancybox="gallery" href="/img/Transfer/reno2-20_0-min.jpg"><img src="/img/Transfer/mini/reno2_20_0_min.udVH8.jpg" alt="Трансфер до санатория Приморский"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1134,7 +1135,7 @@
                     <h3 class="text-center">Для бесплатной консультации или бронирования звоните сейчас по номеру:</h3>
 
                     <div class="number clearfix text-center">
-                        <img src="/old/img/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></div>
+                        <img src="/img/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></div>
                 </div>
             </div>
         </div>
@@ -1145,7 +1146,7 @@
     <div class="container">
         <h2 class="text-center">
             Посмотрите особенности Приморского санатория:
-            <img src="/old/img/arrow-bottom-green.png" alt="Зелёная стрелка">
+            <img src="/img/arrow-bottom-green.png" alt="Зелёная стрелка">
         </h2>
         <div class="blocks">
             <div class="row-fluid">
@@ -1209,10 +1210,10 @@
                                 </div>
                                 <div class="row-fluid">
                                     <div class="images text-center">
-                                        <a data-fancybox="gallery" href="/old/img/Food/dinner2_1-min.jpg"><img src="/old/img/Food/mini/dinner2_1_min.FaFWe.jpg" alt="Ужин в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Food/dinner2_2-min.jpg"><img src="/old/img/Food/mini/dinner2_2_min.rs65e.jpg" alt="Обед в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Food/evant1_0-min.jpg"><img src="/old/img/Food/mini/evant1_0_min.SSuAx.jpg" alt="Завтрак в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Food/img_6422_0-min.jpg"><img src="/old/img/Food/mini/img_6422_0_min.bjKcD.jpg" alt="Полдник в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Food/dinner2_1-min.jpg"><img src="/img/Food/mini/dinner2_1_min.FaFWe.jpg" alt="Ужин в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Food/dinner2_2-min.jpg"><img src="/img/Food/mini/dinner2_2_min.rs65e.jpg" alt="Обед в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Food/evant1_0-min.jpg"><img src="/img/Food/mini/evant1_0_min.SSuAx.jpg" alt="Завтрак в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Food/img_6422_0-min.jpg"><img src="/img/Food/mini/img_6422_0_min.bjKcD.jpg" alt="Полдник в санатории Приморский"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1245,11 +1246,11 @@
                                 </div>
                                 <div class="row-fluid">
                                     <div class="images text-center">
-                                        <a data-fancybox="gallery" href="/old/img/Rest/0917w-min.jpg"><img src="/old/img/Rest/mini/0917w_min.QNObX.jpg" alt="Пляж в санатории Приморской"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Rest/2c1a598b26e6712ae10ad3d8e6c6f8e6-min.jpg"><img src="/old/img/Rest/mini/2c1a598b26e6712ae10ad3d8e6c6f8e6_min.eYJn6.jpg" alt="Бассейн в санатории Приморской"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Rest/9941-1250-min.jpg"><img src="/old/img/Rest/mini/9941_1250_min.kCic9.jpg" alt="Бильярд в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Rest/c88dfbb547f0986635185abedc63bbd8-min.jpg"><img src="/old/img/Rest/mini/c88dfbb547f0986635185abedc63bbd8_min.zQbux.jpg" alt="Место для релакса в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Rest/cfd185aa17fb9e0fcaa3ebeda1a7b23d-min.jpg"><img src="/old/img/Rest/mini/cfd185aa17fb9e0fcaa3ebeda1a7b23d_min.1Fo2A.jpg" alt="Баня в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Rest/0917w-min.jpg"><img src="/img/Rest/mini/0917w_min.QNObX.jpg" alt="Пляж в санатории Приморской"></a>
+                                        <a data-fancybox="gallery" href="/img/Rest/2c1a598b26e6712ae10ad3d8e6c6f8e6-min.jpg"><img src="/img/Rest/mini/2c1a598b26e6712ae10ad3d8e6c6f8e6_min.eYJn6.jpg" alt="Бассейн в санатории Приморской"></a>
+                                        <a data-fancybox="gallery" href="/img/Rest/9941-1250-min.jpg"><img src="/img/Rest/mini/9941_1250_min.kCic9.jpg" alt="Бильярд в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Rest/c88dfbb547f0986635185abedc63bbd8-min.jpg"><img src="/img/Rest/mini/c88dfbb547f0986635185abedc63bbd8_min.zQbux.jpg" alt="Место для релакса в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Rest/cfd185aa17fb9e0fcaa3ebeda1a7b23d-min.jpg"><img src="/img/Rest/mini/cfd185aa17fb9e0fcaa3ebeda1a7b23d_min.1Fo2A.jpg" alt="Баня в санатории Приморский"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1279,13 +1280,13 @@
                                 </div>
                                 <div class="row-fluid">
                                     <div class="images text-center">
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/79947b57765b0bd8aeae26fa61aeb0c3-min.jpg"><img src="/old/img/Treatment/mini/79947b57765b0bd8aeae26fa61aeb0c3_min.loac6.jpg" alt="Джакузи в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/b2_0-min.jpg"><img src="/old/img/Treatment/mini/b2_0_min.Rj6o5.jpg" alt="Кедровая бочка в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/eol1-min.jpg"><img src="/old/img/Treatment/mini/eol1_min.zYaFG.jpg" alt="Процедуры в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/g5_3-min.jpg"><img src="/old/img/Treatment/mini/g5_3_min.56VQ3.jpg" alt="Процедуры в Приморском"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/gryaz1-min.jpg"><img src="/old/img/Treatment/mini/gryaz1_min.Pdiyo.jpg" alt="Грязевое обёртывание в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/shutterstock_151824476-min.jpg"><img src="/old/img/Treatment/mini/shutterstock_151824476_min.vbJ5G.jpg" alt="Спа капсула в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Treatment/vanny1-min.jpg"><img src="/old/img/Treatment/mini/vanny1_min.ThVUj.jpg" alt="Гидрованны в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/79947b57765b0bd8aeae26fa61aeb0c3-min.jpg"><img src="/img/Treatment/mini/79947b57765b0bd8aeae26fa61aeb0c3_min.loac6.jpg" alt="Джакузи в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/b2_0-min.jpg"><img src="/img/Treatment/mini/b2_0_min.Rj6o5.jpg" alt="Кедровая бочка в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/eol1-min.jpg"><img src="/img/Treatment/mini/eol1_min.zYaFG.jpg" alt="Процедуры в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/g5_3-min.jpg"><img src="/img/Treatment/mini/g5_3_min.56VQ3.jpg" alt="Процедуры в Приморском"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/gryaz1-min.jpg"><img src="/img/Treatment/mini/gryaz1_min.Pdiyo.jpg" alt="Грязевое обёртывание в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/shutterstock_151824476-min.jpg"><img src="/img/Treatment/mini/shutterstock_151824476_min.vbJ5G.jpg" alt="Спа капсула в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Treatment/vanny1-min.jpg"><img src="/img/Treatment/mini/vanny1_min.ThVUj.jpg" alt="Гидрованны в санатории Приморский"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1319,12 +1320,12 @@
                                 </div>
                                 <div class="row-fluid">
                                     <div class="images text-center">
-                                        <a data-fancybox="gallery" href="/old/img/Apport/9392-min.jpg"><img src="/old/img/Apport/mini/9392_min.0zf5w.jpg" alt="Люкс Санаторий Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Apport/img_9344-min.jpg"><img src="/old/img/Apport/mini/img_9344_min.mn8Aj.jpg" alt="Двухместный стандарт санаторий Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Apport/img_9382-min.jpg"><img src="/old/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="Двухкомнатный люкс в Приморском"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Apport/img_9407_0-min.jpg"><img src="/old/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="Гостинная в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Apport/img_9415_0-min.jpg"><img src="/old/img/Apport/mini/img_9415_0_min.6Avx8.jpg" alt="Ванная комната в санатории Приморский"></a>
-                                        <a data-fancybox="gallery" href="/old/img/Apport/img_9453-min.jpg"><img src="/old/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="Кровать в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/9392-min.jpg"><img src="/img/Apport/mini/9392_min.0zf5w.jpg" alt="Люкс Санаторий Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/img_9344-min.jpg"><img src="/img/Apport/mini/img_9344_min.mn8Aj.jpg" alt="Двухместный стандарт санаторий Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/img_9382-min.jpg"><img src="/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="Двухкомнатный люкс в Приморском"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/img_9407_0-min.jpg"><img src="/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="Гостинная в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/img_9415_0-min.jpg"><img src="/img/Apport/mini/img_9415_0_min.6Avx8.jpg" alt="Ванная комната в санатории Приморский"></a>
+                                        <a data-fancybox="gallery" href="/img/Apport/img_9453-min.jpg"><img src="/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="Кровать в санатории Приморский"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1342,8 +1343,8 @@
                                 </div>
                                 <div class="row-fluid">
                                     <div class="images text-center">
-                                        <img src="/old/img/Transfer/mini/f09b84b0b3f931732cbda3776fd9e043_min.ezgRW.jpg" alt="Трансфер до санатория Приморский">
-                                        <img src="/old/img/Transfer/mini/reno2_20_0_min.udVH8.jpg" alt="Трансфер до санатория Приморский">
+                                        <img src="/img/Transfer/mini/f09b84b0b3f931732cbda3776fd9e043_min.ezgRW.jpg" alt="Трансфер до санатория Приморский">
+                                        <img src="/img/Transfer/mini/reno2_20_0_min.udVH8.jpg" alt="Трансфер до санатория Приморский">
                                     </div>
                                 </div>
                             </div>
@@ -1377,16 +1378,15 @@
                         <label>Номер телефона</label>
                         <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __" required>
                         <button type="submit" class="text-bold" style="border-bottom: 1px solid #96161d;
-                            border-top: 4px solid #c3262e;
-                            background: #96161d;
-                            border-left: 1px solid #96161d;
-                            border-right: 1px solid #96161d;
-                            border-bottom: 4px solid #c3262e;
-                            color: #fff;
-                            padding: 5px 20px;
-                            margin: 10px 0 7px;
-                            border-radius: 5px;
-                            transition: .3s;">Получить консультацию</button>
+    border-top: 4px solid #c3262e;
+    background: #96161d;
+    border: 1px solid #96161d;
+    border-bottom: 4px solid #c3262e;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 10px 0 7px;
+    border-radius: 5px;
+    transition: .3s;">Получить консультацию</button>
                     </form>
                     <!--                                    <img src="/img/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a>-->
                 </div>
@@ -1570,7 +1570,7 @@
 -->
 <div class="section stars">
     <div class="container text-center">
-        <img src="/old/img/five-stars.png" alt="Звёзды">
+        <img src="/img/five-stars.png" alt="Звёзды">
         <div class="clearfix"></div>
         <span>Нас оценили уже более <span class="underline">13200 человек</span></span>
         <div class="clearfix"></div>
@@ -1583,7 +1583,7 @@
         <div class="row-fluid">
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Николай</span><br>
                         «Отдыхал в санатории
@@ -1602,7 +1602,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Юлия</span><br>
                         «Рекомендую
@@ -1618,7 +1618,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Олег</span><br>
                         «Добрый день! Я ещё нахожусь в санатории и получаю море приятных впечатлений, также хочу поделиться о грамотно подобранном индивидуально каждому отдыхающему лечение и это заслуга лечащих врачей. Очень вкусное, здоровое питание. Рекомендую.»
@@ -1628,7 +1628,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Наталья</span><br>
                         «Отдыхала в "Приморском"
@@ -1649,7 +1649,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Юрий</span><br>
                         «Наконец нашли хороший
@@ -1665,7 +1665,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="item">
-                    <img src="/old/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
+                    <img src="/img/five-stars-rew.png" alt="Отзывы о санатории Приморский" class="stars">
                     <div class="text">
                         <span class="text-bold">Наталья</span><br>
                         «Всем приветик! Девушки из
@@ -1795,22 +1795,22 @@
     <div class="container text-center">
         <div class="col-md-4">
             <div class="logo">
-                <img src="/old/img/logo_footer.png" alt="лого в санатории Приморский">
+                <img src="/img/logo_footer.png" alt="лого в санатории Приморский">
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-6">
             <div class="phones text-bold">
                 <div class="title">Для консультации звоните по номеру сейчас!</div>
                 <div class="numbers">
-                    <img src="/old/img/flag-ru.png" alt="Российский номер телефона"><span id="podmena" style="margin-top: 7px;"><a href="tel:+74999384343" style="color: white;">&nbsp;+7 499 938 43 43</a></span><div class="clearfix"></div>
-                    <img src="/old/img/flag-bl.png" alt="Белорусский номер телефона"><a href="tel:+375291074400" style="color: white;">&nbsp;+375 29 107 44 00 </a></div>
+                    <img src="/img/flag-ru.png" alt="Российский номер телефона"><span id="podmena" style="margin-top: 7px;"><a href="tel:+74999384343" style="color: white;">&nbsp;+7 499 938 43 43</a></span><div class="clearfix"></div>
+                    <img src="/img/flag-bl.png" alt="Белорусский номер телефона"><a href="tel:+375291074400" style="color: white;">&nbsp;+375 29 107 44 00 </a></div>
                 <button class="text-bold" data-toggle="modal" data-target="#consult">Бесплатная консультация</button>
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-md-pull-4 col-sm-pull-6">
             <span>Спасибо, что выбираете нас!</span>
             <div class="clearfix"></div>
-            <a id="back-top" href="#"><img src="/old/img/to-top.png" alt=""></a>
+            <a id="back-top" href="#"><img src="/img/to-top.png" alt=""></a>
         </div>
     </div>
 </footer>
@@ -1967,16 +1967,16 @@
     </div>
 </div>
 
-<link rel="stylesheet" href="/old/css/style.css">
-<link rel="stylesheet" href="/old/css/jquery-ui.min.css">
-<link rel="stylesheet" href="/old/css/theme.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+<link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
-<script src="/old/js/jquery.min.js"></script>
-<script src="/old/js/bootstrap.min.js"></script>
-<script src="/old/js/jquery.maskedinput.min.js"></script>
-<script src="/old/js/jquery-ui.min.js"></script>
-<script src="/old/js/scripts.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script>
     var utm = {};
@@ -2162,19 +2162,19 @@ border: none;
                         <div class="type-svias">
                             <label>
                                 <input type="radio" name="type_svias" id="phone" value="phone"  style="display: none;" checked>
-                                <img src="/old/img/telephoneDom.png" alt="По телефону" >
+                                <img src="/img/telephoneDom.png" alt="По телефону" >
                             </label>
                             <label>
                                 <input type="radio" name="type_svias" id="viber" value="Viber" style="display: none;">
-                                <img src="/old/img/viber.png" alt="Звоните Вайбер" >
+                                <img src="/img/viber.png" alt="Звоните Вайбер" >
                             </label>
                             <label>
                                 <input type="radio" name="type_svias" id="wa" value="WhatsApp" style="display: none;">
-                                <img src="/old/img/wa.png" alt="Звоните вотсап" >
+                                <img src="/img/wa.png" alt="Звоните вотсап" >
                             </label>
                             <label>
                                 <input type="radio" name="type_svias" id="telega" value="Telegram" style="display: none;">
-                                <img src="/old/img/telega.png" alt="звоните телеграмм">
+                                <img src="/img/telega.png" alt="звоните телеграмм">
                             </label>
 
                             <style>
@@ -2225,7 +2225,7 @@ border: none;
                     </div>
 
                     <div class="row-fluid  " >
-                        <button type="submit"  onclick="location.href='/old/Primorsky.pdf';">Посмотреть программу</button>
+                        <button type="submit"  onclick="location.href='http://sanprimorsky.by/Primorsky.pdf';">Посмотреть программу</button>
                     </div>
                     <p style="font-size: 12px;">* Внимание! Осталось всего 7 подарков!<br>
                         Акция действует при покупке путевки на осень 2019.</p>
@@ -2294,20 +2294,5 @@ border: none;
         var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
     })(window, document, 'script', 'cloud.roistat.com', 'de1873179a9ad31869b84532bc1a91cc');
 </script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119318306-1"></script>
-
-
-{{--google optimizer--}}
-{{--<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-119318306-1', { 'optimize_id': 'GTM-PVMD2T3'});
-</script>--}}
-
-
 </body>
 </html>

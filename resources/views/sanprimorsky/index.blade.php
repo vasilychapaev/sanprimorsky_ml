@@ -24,8 +24,8 @@
 
     <link rel="stylesheet" href="{{ asset('js/jqueryui/jquery-ui.css') }}">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous"/>
 
 </head>
 <body>
@@ -68,7 +68,7 @@
                         <h1 class="banner__title">Проведите отдых с пользой для здоровья <br><span> в популярном санатории Беларуси "Приморский" </span></h1>
                         <div class="after-title">
                             <img src="images/content/best.png" alt="Гости санатория приморский">
-                            <h3 class="bg-white">В нашем санатории регулярно оздоравливаются врачи Белоруссии и РФ</h3>
+                            <h3 class="bg-grad">В нашем санатории регулярно оздоравливаются врачи Белоруссии и РФ</h3>
                             <h3 class="bg-grad">Гарантия лучшей цены на этот санаторий</h3>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                             <input type="text" name="datestart" id="datep-on" class="date js_datepicker" placeholder="c __.__.____">
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" name="datefinish" id="datep-off" class="date js_datepicker" placeholder="до __.__.____" >
+                                            <input type="text" name="datefinish" id="datep-off" class="date js_datepicker" placeholder="до __.__.____">
                                         </div>
                                     </div>
                                     {{--<div class="row-fluid">
@@ -959,6 +959,12 @@
                 <div class="logo">
                     <img src="images/logo_footer.png" alt="лого в санатории Приморский">
                 </div>
+                <div style="padding-top: 10px;">
+                    <img src="/images/icon_visa.png" alt="">
+                    <img src="/images/icon_mastercard.png" alt="">
+                    <img src="/images/icon_belcard.png" alt="">
+                    <img src="/images/icon_webpay.png" alt="">
+                </div>
             </div>
             <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-6">
                 <div class="phones text-bold">
@@ -975,6 +981,21 @@
                 <div class="clearfix"></div>
                 <a id="back-top" href="#"><img src="images/icons/to-top.png" alt=""></a>
             </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col" style="color: white">
+                    ООО "Санаториум", УПН 192599279,
+                    от 03.02.2016 Минский горисполком,
+                    Беларусь, Минск, Толбухина д.2, п.35, к.32<br>
+
+                    Время работы: пн-пт 10:00-18:00, сб 10:00-16:00.<br>
+                    <a href="#" style="color: white" data-toggle="modal" data-target="#webpay_uslovia">Условия оплаты</a>
+
+
+                </div>
+            </div>
+
         </div>
     </footer>
 </div>
@@ -1025,5 +1046,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="js/script.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119318306-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119318306-1', {'optimize_id': 'GTM-PVMD2T3'});
+</script>
+
 </body>
 </html>

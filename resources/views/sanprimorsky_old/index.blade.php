@@ -2258,5 +2258,15 @@ border: none;
         var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
     })(window, document, 'script', 'cloud.roistat.com', 'de1873179a9ad31869b84532bc1a91cc');
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119318306-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119318306-1', { 'optimize_id': 'GTM-PVMD2T3'});
+</script>
 </body>
 </html>

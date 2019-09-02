@@ -5,6 +5,10 @@
   font-size: 30px;
   padding: 25px 0;
 
+    @include media-breakpoint-down(phx) {
+        font-size: 24px;
+    }
+
   img {
     margin-bottom: 15px;
   }

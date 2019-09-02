@@ -1,29 +1,3 @@
-.calc-form {
-    background: rgba(255, 255, 255, .9);
-    border: 16px solid rgba(41, 130, 85, .6);
-}
-
-.calc-form .wrapper {
-    background: none;
-    padding: 43px 20px 70px;
-}
-
-.calc-form .wizard {
-    border: 3px dotted #298255;
-    padding: 30px 50px;
-}
-
-.calc-form .actions {margin-top: 60px}
-
-.calc-form .actions li:last-child a {
-    background: #ea0000;
-}
-
-.calc-form .actions li:last-child a:hover {
-    background: #d40000;
-}
-
-
 #room_leave { color: red }
 
 

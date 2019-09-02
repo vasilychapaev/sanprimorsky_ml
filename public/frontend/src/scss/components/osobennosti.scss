@@ -250,6 +250,11 @@
 .osobennosti .number {
   font-size: 30px;
   padding-top: 10px;
+
+    @include media-breakpoint-down(phx) {
+        margin-top: 5px;
+        font-size: 25px;
+    }
 }
 
 .osobennosti .number > img {

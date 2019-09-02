@@ -53,9 +53,14 @@ img.flag {
     text-align: right;
     border-bottom: 4px solid #c3262e;
     border-radius: 4px;
-    padding: 12px 10px;
+    padding: 12px 10px 12px 48px;
     color: #000;
     margin-bottom: 2px;
+    white-space: nowrap;
+
+    @media (max-width: 1400px){
+        font-size: 13px;
+    }
 }
 
 .button-callback:hover, .button-callback:focus {
@@ -323,7 +328,7 @@ form input.date {
 .title-container-text {
 	    background: rgba(255,255,255,0.8); /* Цвет фона под заголовком */
 		padding: 2px; /* Поля вокруг текста */
-		@include font-face-bold;	
+		@include font-face-bold;
 		display: inline;
 		line-height: 1.5;
 }
@@ -626,7 +631,7 @@ button.plav {
     top: 10%;
 }
 .thank-feedback .modal-content{
-    box-shadow: 0 0 100px 20px rgba(0,0,0,.6);   
+    box-shadow: 0 0 100px 20px rgba(0,0,0,.6);
 }
 
 @media screen and (max-width: 1199px){
@@ -832,7 +837,7 @@ button.plav {
     .logo img {
         margin-bottom: 30px;
     }
-    
+
     .best-programms .item-prog .right-block {
         padding-left: 24px;
         width: 68%;
@@ -1147,7 +1152,7 @@ button.plav {
     }
 }
 /************************************************************************************/
-/* Callback 
+/* Callback
 /************************************************************************************/
 .callback {background: red; border-radius: 50% !important; bottom: 150px; cursor: move; height: 50px; position: fixed; right: 40px; width: 50px; z-index: 9999; cursor:pointer;}
 .callback .callback_link::before {background: rgba(0, 0, 0, 0) url(../img/phone.png) no-repeat scroll center center / 35px auto; content: ""; height: 50px; left: 0; position: absolute; top: 0; width: 50px; z-index: 11;}
@@ -1358,15 +1363,15 @@ button.plav {
   cursor: pointer;
 }
 
-.exitblock {    
-    display:none;    
+.exitblock {
+    display:none;
     position:fixed;
     left:0;
     top:0;
     width:100%;
     height:100%;
     z-index:100000;
-}    
+}
 .exitblock .fon {
     background: #F6FCFF;
     opacity:.8;
@@ -1374,7 +1379,7 @@ button.plav {
     width:100%;
     height:100%;
 }
-   
+
 .closeblock {
     cursor:pointer;
     position: fixed;
@@ -1384,8 +1389,8 @@ button.plav {
     text-align:center;
     top:20px;
     right:30px;
-    color: #337AB7;    
+    color: #337AB7;
 }
 .closeblock:hover {
-    color: #000;    
+    color: #000;
 }

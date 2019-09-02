@@ -13,6 +13,8 @@
     padding: 30px 50px;
 }
 
+.calc-form .actions {margin-top: 60px}
+
 .calc-form .actions li:last-child a {
     background: #ea0000;
 }

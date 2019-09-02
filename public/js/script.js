@@ -76,8 +76,6 @@ $(document).ready(function () {
     // $('.js-select2').select2();
 
 
-    // костыли
-    $('.calc-form .actions').css('margin-top', '60px');
 
     $('#wizard a[href="#finish"]').on('click', function (e) {
         e.preventDefault();

@@ -25,11 +25,8 @@
             font-size: 25px;
         }
         @include media-breakpoint-down(phx) {
-            font-size: 20px;
+            font-size: 22px;
             line-height: 1.2;
-        }
-        @include media-breakpoint-down(ph) {
-            font-size: 18px;
         }
 
         > span {
@@ -69,5 +66,9 @@
         @include media-breakpoint-down(phx) {
             display: none;
         }
+    }
+    
+    .form-title {
+        padding: 6px;
     }
 }

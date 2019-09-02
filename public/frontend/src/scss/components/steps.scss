@@ -305,6 +305,16 @@
     table.cart .item-thumb {
         display: inline-block;
         border: 1px solid #e6e6e6;
+    
+        @include media-breakpoint-down(phx) {
+            width: 100%;
+        }
+        
+        img {
+            @include media-breakpoint-down(phx) {
+                width: 100%;
+            }
+        }
     }
     
     table.cart .product-thumb {

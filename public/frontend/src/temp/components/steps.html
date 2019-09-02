@@ -1,212 +1,217 @@
 <div class="wrapper">
-    <form action="" id="wizard">
-        <h4></h4>
-        <section>
-            <h3>Basic details</h3>
-            <div class="form-row">
-                <div class="form-holder">
-                    <i class="zmdi zmdi-account"></i>
-                    <input type="text" class="form-control" placeholder="First Name">
-                </div>
-                <div class="form-holder">
-                    <i class="zmdi zmdi-account"></i>
-                    <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-holder">
-                    <i class="zmdi zmdi-email"></i>
-                    <input type="text" class="form-control" placeholder="Email ID">
-                </div>
-                <div class="form-holder">
-                    <i class="zmdi zmdi-account-box-o"></i>
-                    <input type="text" class="form-control" placeholder="Your User ID">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-holder">
-                    <i class="zmdi zmdi-map"></i>
-                    <input type="text" class="form-control" placeholder="Country">
-                </div>
-                <div class="form-group">
-                    <div class="form-holder">
-                        <i class="zmdi zmdi-pin"></i>
-                        <input type="text" class="form-control" placeholder="State">
-                    </div>
-                    <div class="form-holder">
-                        <i class="zmdi zmdi-pin-drop"></i>
-                        <input type="text" class="form-control" placeholder="City">
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-holder">
-                    <i class="zmdi zmdi-smartphone-android"></i>
-                    <input type="text" class="form-control" placeholder="Phone Number">
-                </div>
-                <div class="form-holder password">
-                    <i class="zmdi zmdi-eye"></i>
-                    <input type="password" class="form-control" placeholder="Reference Coder">
-                </div>
-            </div>
-        </section>
+    <form action="https://securesandbox.webpay.by" id="webpay_form" method="post">
+
+
+    </form>
+
+
+    <form action="#" id="wizard" method="post">
 
         <h4></h4>
         <section>
-            <h3>Password change</h3>
+            <h3>Выберите даты</h3>
             <div class="form-row">
-                <div class="form-holder w-100">
-                    <input type="password" class="form-control" placeholder="Current Password">
-                    <i class="zmdi zmdi-lock-open"></i>
+                <div class="form-holder">
+                    <label for="">Заезда</label>
+
+                    <input name="datestart" value="30.09.2019" type="text" class="form-control js_datepicker" placeholder="20.09.2019">
+                </div>
+                <div class="form-holder">
+                    <label for="">Выезда</label>
+
+                    <input name="datefinish" value="14.10.2019" type="text" class="form-control js_datepicker" placeholder="30.09.2019">
                 </div>
             </div>
-            <div class="form-row">
-                <div class="form-holder w-100">
-                    <input type="password" class="form-control" placeholder="Enter the Current Password">
-                    <i class="zmdi zmdi-lock-open"></i>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-holder w-100">
-                    <input type="password" class="form-control" placeholder="New Password">
-                    <i class="zmdi zmdi-lock-open"></i>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-holder w-100">
-                    <input type="password" class="form-control" placeholder="Confirm New Password">
-                    <i class="zmdi zmdi-lock-open"></i>
-                </div>
-            </div>
+
         </section>
+
 
         <h4></h4>
         <section>
-            <h3 style="margin-bottom: 16px;">My Cart</h3>
+            <h3>Люди и лечение</h3>
+            <div class="form-row">
+                <div class="form-holder">
+                    <label for="">Взрослые</label>
+                    <select name="adults_count" class="form-control">
+                        <option value="1">1 взрослый</option>
+                        <option value="2">2 взрослых</option>
+                        <option value="3">3 взрослых</option>
+                        <option value="4">4 взрослых</option>
+                        <option value="5">5 взрослых</option>
+                        <option value="6">6 взрослых</option>
+                    </select>
+                </div>
+                <div class="form-holder">
+
+                    <label for="">Выберите профиль</label><br>
+                    <select name="bolezni" class="form-control js-select2_"  >
+                        <option value="--">--</option>
+                        <option value="Болезни органов дыхания">Болезни органов дыхания</option>
+                        <option value="Болезни опорно-двигательного аппарата">Болезни опорно-двигательного аппарата</option>
+                        <option value="Болезни органов ЖКТ">Болезни органов ЖКТ</option>
+                        <option value="Болезни нервной системы">Болезни нервной системы</option>
+                        <option value="Болезни сердечно-сосудистой системы">Болезни сердечно-сосудистой системы</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="form-row">
+                <div class="form-holder">
+                    <label for="">Дети</label>
+                    <select name="childs_count" class="form-control">
+                        <option value="0">без детей</option>
+                        <option value="1">1 ребенок</option>
+                        <option value="2">2 ребенка</option>
+                        <option value="3">3 ребенка</option>
+                    </select>
+                </div>
+            </div>
+
+        </section>
+
+
+        <h4></h4>
+        <section>
+            <h3 style="margin-bottom: 16px;">Номера</h3>
             <table cellspacing="0" class="table-cart shop_table shop_table_responsive cart woocommerce-cart-form__contents table" id="shop_table">
                 <thead>
-                <th>&nbsp;</th>
-                <th style="text-align: left;">Product Detail</th>
-                <th>Quantity</th>
-                <th>Total Price</th>
+                <th></th>
+                <th style="text-align: left;">Номер</th>
+                <th style="text-align: left;">Фичи</th>
+                <th style="text-align: center;">Цены</th>
                 <th>&nbsp;</th>
                 </thead>
                 <tbody>
+
+
                 <tr>
                     <td class="product-thumb">
                         <a href="#" class="item-thumb">
-                            <img src="images/content/item-1.jpg" alt="">
+                            <img src="/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="">
                         </a>
                     </td>
-                    <td class="product-detail" data-title="Product Detail">
+                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
                         <div>
-                            <a href="#">Cherry</a>
-                            <span>$</span>
-                            <span>35</span>
+                            <a href="#">Single</a>
+                            <span>1мест-1комн</span>
                         </div>
                     </td>
                     <td class="product-quantity" data-title="Quantity">
-                        <div class="quantity">
-                            <span class="plus">+</span>
-                            <input type="number" id="quantity_5b4f198d958e1" class="input-text qty text" step="1" min="0" max="" name="cart[5934c1ec0cd31e12bd9084d106bc2e32][qty]" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" />
-                            <span class="minus">-</span>
-                        </div>
+                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i>
                     </td>
                     <td class="total-price" data-title="Total Price">
-<span class="woocommerce-Price-amount amount">
-<span class="woocommerce-Price-currencySymbol">$</span>
-70
-</span>
+                        <span class="woocommerce-Price-amount amount">3389 руб</span>
                     </td>
                     <td class="product-remove">
-                        <a href="#">
-                            <i class="zmdi zmdi-close-circle-o"></i>
-                        </a>
+                        <input type="radio" name="room_id" value="1">
                     </td>
                 </tr>
                 <tr>
                     <td class="product-thumb">
                         <a href="#" class="item-thumb">
-                            <img src="images/content/item-2.jpg" alt="">
+                            <img src="/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="">
                         </a>
                     </td>
-                    <td class="product-detail" data-title="Product Detail">
+                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
                         <div>
-                            <a href="#">Mango</a>
-                            <span>$</span>
-                            <span>2035</span>
+                            <a href="#">Twin</a>
+                            <span>2мест-1комн</span>
                         </div>
                     </td>
                     <td class="product-quantity" data-title="Quantity">
-                        <div class="quantity">
-                            <span class="plus">+</span>
-                            <input type="number" id="quantity_5b4f198d958e1" class="input-text qty text" step="1" min="0" max="" name="cart[5934c1ec0cd31e12bd9084d106bc2e32][qty]" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" />
-                            <span class="minus">-</span>
-                        </div>
+                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>
                     </td>
                     <td class="total-price" data-title="Total Price">
-<span class="woocommerce-Price-amount amount">
-<span class="woocommerce-Price-currencySymbol">$</span>
-20
-</span>
+                        <span class="woocommerce-Price-amount amount">2712 руб</span>
                     </td>
                     <td class="product-remove">
-                        <a href="#">
-                            <i class="zmdi zmdi-close-circle-o"></i>
-                        </a>
+                        <input type="radio" name="room_id" value="2">
                     </td>
                 </tr>
+                <tr>
+                    <td class="product-thumb">
+                        <a href="#" class="item-thumb">
+                            <img src="/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="">
+                        </a>
+                    </td>
+                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
+                        <div>
+                            <a href="#">Kingsize</a>
+                            <span>2мест-2комн</span>
+                        </div>
+                    </td>
+                    <td class="product-quantity" data-title="Quantity">
+                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>
+                    </td>
+                    <td class="total-price" data-title="Total Price">
+                        <span class="woocommerce-Price-amount amount">3723 руб</span>
+                    </td>
+                    <td class="product-remove">
+                        <input type="radio" name="room_id" value="3">
+                    </td>
+                </tr>
+
                 </tbody>
             </table>
         </section>
 
         <h4></h4>
         <section>
-            <h3>Cart Totals</h3>
+            <h3>Итоговый расчет</h3>
             <div class="cart_totals">
                 <table cellspacing="0" class="shop_table shop_table_responsive">
                     <tr class="cart-subtotal">
-                        <th>Subtotal</th>
-                        <td data-title="Subtotal">
-<span class="woocommerce-Price-amount amount">
-<span class="woocommerce-Price-currencySymbol">$</span>110.00
-</span>
+                        <th>Количество людей</th>
+                        <td>
+                                        <span class="woocommerce-Price-amount amount">
+                                            Взрослых: 2 чел<br>
+                                            Детей: 1 чел (5 лет)
+                                        </span>
                         </td>
                     </tr>
                     <tr class="cart-subtotal shipping">
-                        <th>Shipping:</th>
+                        <th>Даты:</th>
                         <td data-title="Subtotal">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="radio" name="shipping" checked> Free Shipping
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="shipping"> Local pickup: <span>$</span><span>0.00</span>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <span>Calculate shipping</span>
+                            Заезд: 23.09.2019<br>
+                            Выезд: 02.10.2019<br>
                         </td>
                     </tr>
                     <tr class="cart-subtotal">
-                        <th>Service <span>(estimated for Vietnam)</span></th>
-                        <td data-title="Subtotal">
-<span class="woocommerce-Price-amount amount">
-<span class="woocommerce-Price-currencySymbol">$</span>5.60
-</span>
+                        <th>Номер</th>
+                        <td>
+                            Twin, 2мест-2комн
+                            <div id="room_leave">Осталось 2 последних номера!</div>
+
                         </td>
                     </tr>
                     <tr class="order-total border-0">
-                        <th>Total</th>
+                        <th>Общая цена путевок</th>
                         <td data-title="Total">
-<span class="woocommerce-Price-amount amount">
-<span class="woocommerce-Price-currencySymbol">$</span>64.69
-</span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            76800 руб
+                                            <input type="hidden" name="amount" value="76">
+                                        </span>
                         </td>
                     </tr>
                 </table>
+
+                <div class="form-row">
+                    <div class="form-holder">
+                        <label for="">Фамилия и Имя</label>
+                        <input name="fio" value="" placeholder="Иванов Иван">
+                    </div>
+                    <div class="form-holder">
+                        <label for="">Телефон или email</label>
+                        <input name="phone" value="" placeholder="+7 (921) 111-22-33">
+                    </div>
+                </div>
+
             </div>
         </section>
+
     </form>
 </div>

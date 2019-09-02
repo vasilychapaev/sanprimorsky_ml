@@ -55,10 +55,10 @@ $(function(){
         }
     })
     // Create Steps Image
-    $('.steps ul li:first-child').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-1-active.png" alt=""> ').append('<span class="step-order">Шаг 01</span>');
-    $('.steps ul li:nth-child(2)').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-2.png" alt="">').append('<span class="step-order">Шаг 02</span>');
-    $('.steps ul li:nth-child(3)').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-3.png" alt="">').append('<span class="step-order">Шаг 03</span>');
-    $('.steps ul li:last-child a').append('<img src="images/icons/step-4.png" alt="">').append('<span class="step-order">Шаг 04</span>');
+    $('.steps ul li:first-child').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-1-active.png" alt=""> ').append('<span class="step-order">Даты</span>');
+    $('.steps ul li:nth-child(2)').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-2.png" alt="">').append('<span class="step-order">Люди</span>');
+    $('.steps ul li:nth-child(3)').append('<img src="images/icons/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/icons/step-3.png" alt="">').append('<span class="step-order">Номера</span>');
+    $('.steps ul li:last-child a').append('<img src="images/icons/step-4.png" alt="">').append('<span class="step-order">Сумма</span>');
     // Count input
     $(".quantity span").on("click", function() {
 

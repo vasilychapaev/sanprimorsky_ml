@@ -1,0 +1,148 @@
+.after-calc {
+  background: url("../images/content/before_calc_bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+
+  .block-info {
+    background: #fff;
+    border-radius: 4px;
+    float: right;
+    font-size: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    width: 400px;
+    @include font-face-bold;
+  }
+}
+
+.after-calc .no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.after-calc img.arrow-top {
+  margin-top: 15px;
+}
+
+.after-calc .block-info img.gar {
+  position: absolute;
+  left: -60px;
+  top: 133px;
+  z-index: 9;
+}
+
+.after-calc .block-info:before,
+.after-calc .block-info:after,
+.after-calc .block-info .phone:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.after-calc .block-info:before, .after-calc .block-info .phone:before {
+  background: url("../images/icons/border-top.png") repeat-x;
+  height: 2px;
+  top: 0;
+  right: 0;
+}
+
+.after-calc .block-info:after {
+  background: url("../images/icons/border-left.png") repeat-y;
+  bottom: 101px;
+  top: -2px;
+  width: 2px;
+}
+
+.after-calc .block-info .green {
+  color: #3d8a5e;
+  padding: 15px 40px 0;
+}
+
+.after-calc .block-info .red {
+  color: #c3262e;
+  @include font-face-bold-italic;
+  padding: 15px 0;
+}
+
+.after-calc .block-info .black {
+  padding: 0 30px 15px;
+}
+
+.after-calc .block-info .phone {
+  position: relative;
+  padding-top: 15px;
+}
+
+.after-calc .block-info .phone:before {
+  right: 40px;
+}
+
+.after-calc .block-info .phone-num {
+  font-size: 24px;
+  padding: 10px 0 0;
+}
+
+.after-calc .block-info .phone-num > img {
+  margin-right: 5px;
+}
+
+.after-calc .name {
+  @include font-face-bold-italic;
+  font-size: 20px;
+  text-align: right;
+  position: absolute;
+  bottom: -110px;
+  right: -70px;
+  line-height: 20px;
+}
+
+.after-calc .name > span {
+  color: #4c4c4c;
+}
+
+@media screen and (max-width: 991px) {
+  .after-calc .block-info {
+    float: none;
+    font-size: 16px;
+    width: 328px;
+    left: 33px;
+  }
+
+  .after-calc .name {
+    bottom: -150px;
+    right: 275px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .after-calc .block-info {
+    left: 60px;
+  }
+
+  .after-calc .block-info::before, .after-calc .block-info .phone::before {
+    right: 62px;
+  }
+}
+@media screen and (max-width: 679px) {
+  .after-calc .block-info {
+    left: 0;
+  }
+
+  .after-calc .block-info {
+    width: 100%;
+    left: 0;
+  }
+
+  .after-calc .block-info img.gar {
+    display: none;
+  }
+
+  .after-calc .block-info::before, .after-calc .block-info .phone::before {
+    right: 0;
+  }
+
+  .after-calc .name {
+    right: 10px;
+  }
+}

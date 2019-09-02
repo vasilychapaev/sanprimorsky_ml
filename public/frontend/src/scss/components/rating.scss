@@ -1,0 +1,19 @@
+.rating {
+  background: #298255;
+  color: #fff;
+  @include font-face-bold-italic;
+  font-size: 30px;
+  padding: 25px 0;
+
+  img {
+    margin-bottom: 15px;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  span.underline {
+    text-decoration: underline;
+  }
+}

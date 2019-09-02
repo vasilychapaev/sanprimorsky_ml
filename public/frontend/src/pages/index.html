@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+   @@include('../temp/_page-head.html')
+</head>
+<body>
+<div class="page">
+    @@include('../temp/structure/header.html')
+    <main class="main">
+        @@include('../temp/components/banner.html')
+        @@include('../temp/components/slider-reviw.html')
+        @@include('../temp/components/soveti.html')
+        @@include('../temp/components/calc.html')
+        @@include('../temp/components/after-calc.html')
+        @@include('../temp/components/services.html')
+        @@include('../temp/components/osobennosti.html')
+        @@include('../temp/components/rating.html')
+        @@include('../temp/components/review.html')
+        @@include('../temp/components/promo.html')
+        @@include('../temp/components/contacts.html')
+    </main>
+    @@include('../temp/structure/footer.html')
+</div>
+@@include('../temp/components/modals.html')
+<button id="plavbutton" class="plav visible-md visible-lg" data-toggle="modal" data-target="#action" style="opacity: 0;"><b style="color:white;">Узнать цены</b></button>
+<script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=5687957026635776"></script>
+<script>
+    let btn = document.querySelector('#plavbutton');
+
+    window.onscroll = magic;
+
+    function magic() {
+        if (window.pageYOffset > 1000) {
+            btn.style.opacity = '1';
+        } else { btn.style.opacity = '0'; }
+    }
+    btn.onclick = function () {
+        window.scrollTo(0,0);
+    };
+</script>
+@@include('../temp/_page-foot.html')
+</body>
+</html>

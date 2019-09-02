@@ -1,0 +1,32 @@
+@import "bootstrap/bootstrap";
+
+@import "styleguide/fontface";
+@import "_dev/var";
+@import "_dev/mixin";
+
+@import "styleguide/style";
+@import "styleguide/global";
+@import "_dev/sprite";
+@import "_dev/sprite_svg";
+@import "_dev/sprite_svg-bg";
+@import "_dev/mixin-svg";
+//@import "print";
+
+//----Styleguide----
+@import "styleguide/headings";
+//@import "styleguide/list";
+//@import "styleguide/table";
+//@import "styleguide/buttons";
+
+//----Components----
+@import "components/banner";
+@import "components/slider-reviw";
+@import "components/calc";
+@import "components/steps";
+@import "components/after-calc";
+@import "components/services";
+@import "components/osobennosti";
+@import "components/rating";
+@import "components/review";
+@import "components/promo";
+@import "components/contacts";

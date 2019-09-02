@@ -1,0 +1,66 @@
+.slider-reviw {
+  background: #d9e4e2;
+  padding: 20px;
+}
+
+.slide-block {
+  background: #ecf2f1;
+  padding: 0;
+}
+
+.slider {
+  @include font-face-bold-italic;
+  font-size: 20px;
+  position: absolute;
+  width: 78%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.slides {
+  list-style: none;
+  padding: 0;
+  height: 100%;
+}
+
+.slide-text {
+  margin: 25px auto auto;
+  width: 80%;
+  padding-left: 25px;
+}
+
+.slide-text > span, .section.calc .calc-form .form-container .title > span {
+  color: #298255;
+}
+
+.slide-date {
+  color: #7f7f7f;
+  position: relative;
+  right: 10%;
+  bottom: 0;
+  float: right;
+}
+
+.slider .carousel-control {
+  background: none;
+  display: flex;
+}
+
+.slider .carousel-control > img {
+  display: inline-block;
+  margin: auto;
+}
+
+.stars {
+  display: block;
+  float: left;
+  width: 22%;
+}
+
+.stars > img {
+  width: 100%;
+}

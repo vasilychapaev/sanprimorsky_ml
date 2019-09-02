@@ -1,0 +1,217 @@
+.calc {
+  background: url("../images/content/calc_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 80px 0;
+
+  &__title {
+    margin-top: 0!important;
+    text-align: center;
+  }
+}
+
+.section.calc .calc-form .form-container .title {
+  font-size: 25px;
+}
+
+.section.calc .step {
+  border: 3px dotted #298255;
+  height: 365px;
+  overflow: hidden;
+  padding: 10px 0 20px;
+  border-radius: 4px;
+  width: 95%;
+  margin: 20px auto;
+  opacity: 0;
+  position: relative;
+  transition: opacity .4s;
+}
+
+.section.calc .step.active {
+  opacity: 1;
+}
+
+.section.calc .form-container {
+  background: rgba(231,233,234,.9);
+  overflow: hidden;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  height: 530px;
+}
+
+.section.calc .form-container.leto {
+  border: 16px solid rgba(41,130,85,.6);
+}
+
+.section.calc .form-container.zima {
+  border: 16px solid ;
+}
+
+.section.calc .row-select {
+  margin: 5px 0;
+}
+
+.calc-form .step-name {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.calc-form .step-name > span {
+  color: #4d4d4d;
+  @include font-face-bold-italic;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+}
+
+.section.calc button.step-next {
+  background: #feb81f;
+  border: 1px solid #feb81f;
+  border-bottom: 4px solid #e7a313;
+  border-radius: 4px;
+  font-size: 23px;
+  padding: 5px 40px;
+  margin-top: 20px;
+}
+
+.calc-form {
+  position: relative;
+  background: #fff;
+}
+
+.calc-form form input[type='checkbox'] {
+  display: none;
+}
+
+.calc-form form input[type='checkbox'] + label {
+  background: #71b890;
+  border: 1px solid #3d8a5e;
+  border-bottom: 4px solid #71b890;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  height: 48px;
+  font-weight: normal;
+  padding: 0 12px;
+}
+
+.calc-form form input[type="checkbox"] + label > span {
+  display: inline-block;
+  margin: auto;
+}
+
+.calc-form form input[type="checkbox"]:checked + label {
+  border: 4px solid #71b890;
+  background: #3d8a5e;
+  font-size: 14px;
+}
+
+.calc-form .buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 15px;
+}
+
+.calc-form .buttons .step-prev {
+  background: #d9dada;
+  border: 1px solid #b2b3b3;
+  border-bottom: 4px solid #b2b3b3;
+  border-radius: 5px;
+  height: 47px;
+  position: relative;
+  bottom: 4px;
+  margin-right: 5px;
+}
+
+.calc-form .label {
+  color: #000;
+  @include font-face-bold-italic;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.calc-form .range-slider {
+  overflow: hidden;
+  padding: 40px 15px;
+}
+
+.calc-form .range-slider input {
+  margin-bottom: 15px;
+}
+
+.calc-form .type-svias input[type="radio"] {
+  display: none;
+}
+
+.calc-form .type-svias input[type="radio"] + label {
+  background: #fefefe;
+  border: 1px solid #b2b3b3;
+  border-bottom: 4px solid #b2b3b3;
+  border-radius: 5px;
+  height: 55px;
+  position: relative;
+  cursor: pointer;
+}
+
+.calc-form .type-svias input[type="radio"] + label > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.calc-form .type-svias input[type="radio"]:checked + label > span:before {
+  background: rgba(255,255,255,0);
+}
+
+.calc-form .type-svias input[type="radio"] + label > span.radio.viber,
+.calc-form .type-svias input[type="radio"] + label > span.radio.watsapp,
+.calc-form .type-svias input[type="radio"] + label > span.radio.telega {
+  padding: 0;
+  width: 55px;
+}
+
+.calc-form .type-svias input[type="radio"] + label > span.radio > img {
+  width: 60%;
+}
+
+.calc-form .type-svias input[type="radio"] + label > span.radio.phone {
+  @include font-face-bold-italic;
+  padding: 5px 15px;
+}
+
+.calc-form .type-svias label, .calc-form .info {
+  @include font-face-bold-italic;
+}
+
+.calc-form .type-svias input[type="text"] {
+  border-radius: 5px;
+}
+
+.calc-form button.finish {
+  background: #96161d;
+  border: 1px solid #c3262e;
+  border-bottom: 4px solid #c3262e;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calc-form .info {
+  margin-top: 5px;
+}

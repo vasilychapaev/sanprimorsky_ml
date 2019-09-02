@@ -1,0 +1,43 @@
+.services {
+  background: url("../images/content/foto_bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 0 0 40px;
+
+  .title-container {
+    font-size: 25px;
+    margin: auto;
+    width: 60%;
+    padding: 25px 0;
+    line-height: 30px;
+    @include font-face-bold;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .item .image img {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 18px;
+    padding: 0 15px;
+    @include font-face-bold;
+  }
+
+  .description {
+    background: url("../images/icons/desc_bg.png") no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: #000;
+    height: 124px;
+    margin: 15px auto 0;
+    width: 787px;
+    padding: 6px 50px 0 130px;
+    text-align: left;
+    font-size: 16px;
+  }
+}

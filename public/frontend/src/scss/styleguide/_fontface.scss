@@ -1,0 +1,14 @@
+@mixin fontface($ff-name, $name) {
+  @font-face {
+    font-family: '#{$ff-name}';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('../fonts/#{$name}.woff') format('woff');
+          //url('../fonts/#{$name}.woff2') format('woff2');
+  }
+}
+
+@include fontface(MuseoSansCyrl-300, MuseoSansCyrl-300);
+@include fontface(MuseoSansCyrl-700, MuseoSansCyrl-700);
+@include fontface(MuseoSansCyrl-700i, MuseoSansCyrl-700Italic);
+

@@ -1,0 +1,49 @@
+.banner {
+  background-size: cover;
+  padding-bottom: 25px;
+
+  .leto & {
+    background: url("../images/content/head_leto_bg_new.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .zima & {
+    background: url("../images/content/head_zima_bg.jpg") no-repeat center;
+  }
+
+  &__title {
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.8);
+
+    > span {
+      color: #3d8a5e;
+    }
+  }
+
+  .after-title {
+    position: relative;
+    clear: both;
+  }
+
+  .after-title h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 105px;
+  }
+
+  .after-title h3.bg-grad {
+    background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,0));
+  }
+
+  .after-title img {
+    position: absolute;
+    width: 120px;
+    top: -14px;
+    left: -25px;
+  }
+}

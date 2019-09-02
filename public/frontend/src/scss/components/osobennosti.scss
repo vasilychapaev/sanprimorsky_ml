@@ -1,0 +1,263 @@
+.osobennosti {
+  padding-bottom: 40px;
+}
+
+.osobennosti .blocks, .osobennosti h2 {
+  margin: auto;
+  width: 85%;
+}
+
+.osobennosti h2 {
+  border-left: 2px dotted #18b52b;
+  display: block;
+  padding: 15px 0 20px;
+  position: relative;
+}
+
+.osobennosti h2:after {
+  border-bottom: 2px dotted #18b52b;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.osobennosti h2 > img {
+  position: absolute;
+  bottom: -38px;
+  z-index: 10;
+  left: 49%;
+}
+
+.osobennosti .blocks {
+  background: #e5e5e5;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.osobennosti .blocks ul.ul-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.osobennosti .blocks ul.ul-menu li a {
+  background: #008352;
+  border-radius: 3px;
+  border: 1px solid #298255;
+  border-bottom: 4px solid #999;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a {
+  border-bottom: 4px solid #298255;
+  background: #fff;
+  color: #000
+}
+
+.osobennosti .blocks ul.ul-menu li a:hover, .osobennosti .blocks ul.ul-menu li a:focus {
+  text-decoration: none;
+}
+
+.osobennosti .blocks ul.ul-menu li a:before, .osobennosti .blocks ul.ul-menu li a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.osobennosti .blocks ul.ul-menu li a:before {
+  left: 10px;
+}
+
+.osobennosti .blocks ul.ul-menu li a.otdih:before {
+  background: url("../images/icons/otdih.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.otdih:before {
+  background: url("../images/icons/otdih-act.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li a:after {
+  background: url("../images/icons/arrow-bottom-white.png") no-repeat;
+  background-position: center;
+  right: 5px;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a:after {
+  background: url("../images/icons/arrow-right-green.png") no-repeat;
+  background-position: center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.pitanie:before {
+  background: url("../images/icons/pitanie.png") no-repeat;
+  background-position: center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.pitanie:before {
+  background: url("../images/icons/pitanie-act.png") no-repeat;
+  background-position: center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.lechenie:before {
+  background: url("../images/icons/lechenie.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.lechenie:before {
+  background: url("../images/icons/lechenie-act.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.proz:before {
+  background: url("../images/icons/prozivanie.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.proz:before {
+  background: url("../images/icons/prozivanie-act.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.transfer:before {
+  background: url("../images/icons/transfer.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.transfer:before {
+  background: url("../images/icons/transfer-act.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.skidki {
+  background: #E3212A;
+  border-color: #E3212A;
+  border-bottom-color: #999;
+  font-size: 16px;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.skidki {
+  color: #fff;
+}
+
+.osobennosti .blocks ul.ul-menu li a.skidki:before {
+  background: url("../images/icons/skidki_bg.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li a.skidki:after {
+  background: url("../images/icons/arrow-red.png") no-repeat center;
+}
+
+.osobennosti .blocks ul.ul-menu li.active a.skidki:after {
+  transform: rotate(-90deg);
+}
+
+.osobennosti .blocks .bordered {
+  border: 2px dotted #666;
+  background: #fff;
+  overflow: hidden;
+  padding: 15px;
+  width: 95%;
+  border-radius: 0 5px 5px 0;
+}
+
+.osobennosti .blocks .bordered ul.marker-check {
+  list-style-image: url("../images/icons/ul-list-check.png");
+  padding-left: 34px;
+}
+
+.osobennosti .blocks .bordered .images {
+  padding-top: 10px;
+}
+
+.osobennosti .blocks .bordered .images img {
+  display: inline-block;
+  width: 23%;
+  margin: 0 4px 8px;
+}
+
+.osobennosti .blocks .bordered, .osobennosti .blocks .bordered ul li, .osobennosti .blocks .bordered ol li {
+  font-size: 18px;
+}
+
+.osobennosti .blocks .bordered ul li, .osobennosti .blocks .bordered ol li {
+  margin-bottom: 7px;
+}
+
+.osobennosti .blocks .bordered ul li span.top {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+
+.osobennosti .blocks .bordered ol {
+  padding-left: 2px;
+  list-style-type: none;
+  counter-reset: num;
+}
+
+.osobennosti .blocks .bordered ol li::before {
+  content: counter(num) '. ';
+  counter-increment: num;
+  font-size: 20px;
+}
+
+.osobennosti .blocks a.button-to-vileo {
+  background: #fff;
+  display: inline-block;
+  font-size: 18px;
+  color: #000;
+  border-radius: 5px;
+  border-top: 1px solid #e9ac2b;
+  border-left: 2px solid #e9ac2b;
+  border-right: 2px solid #e9ac2b;
+  border-bottom: 4px solid #e9ac2b;
+  padding: 10px 5px 10px 35px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.osobennosti .blocks a.button-to-vileo:before {
+  background: url("../images/icons/video.png") no-repeat center;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+
+.osobennosti .blocks a.button-to-vileo:hover, .osobennosti .blocks a.button-to-vileo:focus {
+  background: #e9ac2b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.osobennosti .blocks a.button-to-vileo:hover:before, .osobennosti .blocks a.button-to-vileo:focus:before {
+  background: url("../images/icons/video-act.png") no-repeat center;
+}
+
+.osobennosti h3 {
+  font-size: 20px;
+}
+
+.osobennosti .number {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.osobennosti .number > img {
+  margin-right: 7px;
+}
+
+.osobennosti .text-bold {
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: inline-block;
+}

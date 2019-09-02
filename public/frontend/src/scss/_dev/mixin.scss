@@ -1,0 +1,19 @@
+@mixin font-face-regular() {
+  font-family: $font-300;
+  font-weight: normal;
+}
+@mixin font-face-bold() {
+  font-family: $font-700;
+  font-weight: normal;
+}
+@mixin font-face-bold-italic() {
+  font-family: $font-700i;
+  font-weight: normal;
+}
+@mixin font-face-light() {
+  //font-family: $roboto-l;
+}
+@mixin font-face-medium() {
+  //font-family: $roboto-m;
+  //font-weight: normal;
+}

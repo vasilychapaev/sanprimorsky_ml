@@ -79,8 +79,11 @@
     }
     
     section.body {
-        height: 340px;
+        height: 380px;
         
+        @include media-breakpoint-down(tbx) {
+            height: auto;
+        }
         @include media-breakpoint-down(phx) {
             width: auto;
         }

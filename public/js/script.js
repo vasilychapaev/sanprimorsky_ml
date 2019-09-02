@@ -89,11 +89,18 @@ $(document).ready(function () {
             headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
             success: function (json) {
                 if (json.status == 'ok') {
+                    yaCounter55131532.reachGoal('payment');
                     $('#webpay_form').html(json.html);
                     setTimeout($('#webpay_form').submit(), 1000);
                 }
             }
         });
-    })
+    });
+
+
+    function popupSoloduha() {
+        $('#global-modal').modal('show');
+    }
+    setTimeout(popupSoloduha, 25000);
 
 });

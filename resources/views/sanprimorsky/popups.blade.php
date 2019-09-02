@@ -21,7 +21,7 @@
                     <input type="text" name="name" placeholder="Иван Иванович">
                     <label>Номер телефона</label>
                     <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __" required>
-                    <button type="submit" class="text-bold">Получить консультацию</button>
+                    <button type="submit" class="text-bold" onClick="yaCounter55131532.reachGoal('free1'); return true;">Получить консультацию</button>
                 </form>
             </div>
         </div>

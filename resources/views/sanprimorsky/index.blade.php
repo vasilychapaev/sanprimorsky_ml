@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/mainfix.min.css">
 
 
     <link rel="stylesheet" href="{{ asset('js/jqueryui/jquery-ui.css') }}">
@@ -29,6 +30,52 @@
 
 </head>
 <body>
+
+
+{{--<option value="Сердечно-сосудистая система">Сердечно-сосудистая система</option>--}}
+{{--<option value="Опорно-двигательный аппарат">Опорно-двигательный аппарат</option>--}}
+{{--<option value="Органы дыхания">Органы дыхания</option>--}}
+{{--<option value="Верхние дыхательные пути">Верхние дыхательные пути</option>--}}
+{{--<option value="Органы ЖКТ">Органы ЖКТ</option>--}}
+{{--<option value="Нервная система">Нервная система</option>--}}
+{{--<option value="Общетерапевтический профиль">Общетерапевтический профиль</option>--}}
+{{--<option value="Органы пищеварения">Органы пищеварения</option>--}}
+{{--<option value="Костно-мышечные болезни">Костно-мышечные болезни</option>--}}
+
+@php
+    $select_bolezni = [
+       '--',
+       'Болезни органов дыхания',
+       'Болезни опорно-двигательного аппарата',
+       'Болезни органов ЖКТ',
+       'Болезни нервной системы',
+       'Болезни сердечно-сосудистой системы',
+       ];
+    $select_adults = [
+        ['cnt'=>1, 'name'=>'1 взрослый'],
+        ['cnt'=>2, 'name'=>'2 взрослых'],
+        ['cnt'=>3, 'name'=>'3 взрослых'],
+        ['cnt'=>4, 'name'=>'4 взрослых'],
+        ['cnt'=>5, 'name'=>'5 взрослых'],
+        ['cnt'=>6, 'name'=>'6 взрослых'],
+    ];
+    $select_childs = [
+        ['cnt'=>0, 'name'=>'без детей'],
+        ['cnt'=>1, 'name'=>'1 ребенок'],
+        ['cnt'=>2, 'name'=>'2 ребенка'],
+        ['cnt'=>3, 'name'=>'3 ребенка'],
+    ];
+
+    $select_rooms = [
+        ['id'=>1, 'name'=>'Single', 'desc'=>'1мест-1комн', 'price'=>'3389', 'img'=>'/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
+        ['id'=>2, 'name'=>'Twin', 'desc'=>'2мест-1комн', 'price'=>'2712', 'img'=>'/img/Apport/mini/img_9453_min.XY1QN.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
+        ['id'=>3, 'name'=>'Kingsize', 'desc'=>'2мест-2комн', 'price'=>'3723', 'img'=>'/img/Apport/mini/img_9382_min.wQvX1.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
+       ];
+@endphp
+
 <div class="page">
     <header id="top">
         <div id="head-css" class="row-fluid">
@@ -81,9 +128,14 @@
                             <div class="forma text-center">
                                 <div class="form-title">Успейте сэкономить! Бронирование 2019!</div>
                                 <div class="form-title-before">
-                                    <img src="images/content/var5.jpg" alt="акция санатория Приморский">
+                                    <div style="padding-bottom: 1px;background: rgba(245, 247, 246, 0.8);">
+                                        <p style="font-size: 23px;">
+                                            <span style="color: red">Акция</span> до конца недели!<br>
+                                            Путевки на осень 2019 <span style="color: red">со скидкой до -20%</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <form class="form datespeoplesphone">
+                                <form class="form js_datespeoplesphone">
                                         <span>Заполните форму и узнайте<br>
                                             сниженную стоимость путёвки</span>
                                     <div class="row-fluid">
@@ -95,43 +147,32 @@
                                             <input type="text" name="datefinish" id="datep-off" class="date js_datepicker" placeholder="до __.__.____">
                                         </div>
                                     </div>
-                                    {{--<div class="row-fluid">
+                                    <div class="row-fluid">
                                         <div class="col-sm-8 col-sm-offset-2">
                                             <label>Выберите лечебный профиль:</label>
                                             <div class="clearfix"></div>
                                             <select name="profile">
-                                                <option value="Сердечно-сосудистая система">Сердечно-сосудистая система</option>
-                                                <option value="Опорно-двигательный аппарат">Опорно-двигательный аппарат</option>
-                                                <option value="Органы дыхания">Органы дыхания</option>
-                                                <option value="Верхние дыхательные пути">Верхние дыхательные пути</option>
-                                                <option value="Органы ЖКТ">Органы ЖКТ</option>
-                                                <option value="Нервная система">Нервная система</option>
-                                                <option value="Общетерапевтический профиль">Общетерапевтический профиль</option>
-                                                <option value="Органы пищеварения">Органы пищеварения</option>
-                                                <option value="Костно-мышечные болезни">Костно-мышечные болезни</option>
+                                                @foreach ($select_bolezni as $option)
+                                                    <option value="{{ $option }}">{{ $option }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
-                                    </div>--}}
+                                    </div>
                                     <div class="row-fluid">
                                         <label>Выберите количество отдыхающих:</label>
                                         <div class="clearfix"></div>
                                         <div class="col-sm-6">
                                             <select name="people-val" class="select people">
-                                                <option value="1 взрослый">1 взрослый</option>
-                                                <option value="2 взрослых">2 взрослых</option>
-                                                <option value="3 взрослых">3 взрослых</option>
-                                                <option value="4 взрослых">4 взрослых</option>
-                                                <option value="5 взрослых">5 взрослых</option>
-                                                <option value="6 взрослых">6 взрослых</option>
+                                                @foreach ($select_adults as $option)
+                                                    <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                         <div class="col-sm-6">
                                             <select name="baby-val" class="select baby">
-                                                <option value="Без детей">Без детей</option>
-                                                <option value="1 ребенок">1 ребенок</option>
-                                                <option value="2 детей">2 детей</option>
-                                                <option value="3 детей">3 детей</option>
-                                                <option value="4 детей">4 детей</option>
+                                                @foreach ($select_childs as $option)
+                                                    <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -139,7 +180,7 @@
                                         <label>Введите номер телефона для связи с Вами:</label>
                                         <div class="clearfix"></div>
                                         <div class="col-sm-8 col-sm-offset-2">
-                                            <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __" required="">
+                                            <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __">
                                         </div>
                                     </div>
                                     <input type="hidden" name="form_name" value="Форма на превом экране">
@@ -153,7 +194,7 @@
                                         <button type="submit">Узнать сниженную стоимость</button>
                                     </div>
                                     <div class="row-fluid">
-                                        <span class="form-ob">Мы свяжемся с Вами в течение 20 минут и подберём предложение</span>
+                                        <span class="form-ob">* Нажимая на кнопку, я даю согласие на обработку персональных данных</span>
                                     </div>
                                 </form>
                             </div>
@@ -179,19 +220,19 @@
                                             персоналу, как и ожидалось цены на лечение
                                             и правда выгоднее.»
                                         </div>
-                                        <span class="slide-date">22.11.2018</span>
+                                        <span class="slide-date">28.05.2019</span>
                                     </li>
                                     <li class="slide item">
                                         <div class="slide-text">
                                             «<span>Рекомендую Хороший тихий спокойный санаторий</span>. Везде чисто. Лечебная база прекрасная, медицинский персонал отличный. Всё понравилось. Спасибо.»
                                         </div>
-                                        <span class="slide-date">25.09.2018</span>
+                                        <span class="slide-date">22.06.2019</span>
                                     </li>
                                     <li class="slide item">
                                         <div class="slide-text">
                                             «Отдыхала в "Приморском" с 10 апреля по 27 апреля 2019 года. <span>Отличное отношение всех сотрудников к отдыхающим, разнообразное питание, прекрасное лечение!</span>»
                                         </div>
-                                        <span class="slide-date">28.05.2019</span>
+                                        <span class="slide-date">06.08.2019</span>
                                     </li>
                                 </ul>
 
@@ -209,9 +250,7 @@
         </div>
         <div class="section soveti">
             <div class="container">
-                <h2 class="text-center">
-                    Почему много Белорусов и Россиян<br>советуют санаторий Приморский:
-                </h2>
+                <h2 class="text-center">Преимущества санатория «Приморский:</h2>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="item">
@@ -549,7 +588,7 @@
                                                     <li>
                                                             <span class="top">
                                                                 <span>В санатории предусмотрено заказное 5-ти разовое питание</span>
-                                                                (Завтрак, второй завтрак, обед, полдник, ужин). Вы сами модете выбрать, что хотите, на завтрак, обед и ужин.
+                                                                (Завтрак, второй завтрак, обед, полдник, ужин). Вы сами можете выбрать, что хотите, на завтрак, обед и ужин.
                                                             </span>
                                                     </li>
                                                     <li>
@@ -721,14 +760,44 @@
                     <div class="clearfix"></div>
 
                     <div class="row-fluid">
-                        <div class="text-center">
+                        {{--<div class="text-center">
                             <a href="" class="button-to-vileo" data-toggle="modal" data-target="#video">Посмотреть видео о санатории >></a>
                         </div>
 
                         <h3 class="text-center">Для бесплатной консультации или бронирования звоните сейчас по номеру:</h3>
 
                         <div class="number clearfix text-center">
-                            <img src="/images/icons/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a></div>
+                            <img src="/images/icons/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a>
+                        </div>--}}
+                        <h3 class="text-center"><p>Остались вопросы?</br>
+                                Получите бесплатную консультацию от нашего менеджера.</p></h3>
+                        <div class="text-center col-xs-6 col-sm-4"></div>
+                        <div class="text-center col-xs-6 col-sm-4">
+                            <form class="form js_scroll2book">
+                                <input type="hidden" name="form_name" value="Форма особенности Приморского санатория">
+                                <input type="hidden" id="utm_term" name="utm_term">
+                                <input type="hidden" id="utm_source" name="utm_source">
+                                <input type="hidden" id="utm_medium" name="utm_medium">
+                                <input type="hidden" id="utm_content" name="utm_content">
+                                <input type="hidden" id="utm_campaign" name="utm_campaign">
+                                <input type="hidden" id="roistat" name="roistat">
+                                <label>Ваше Имя</label>
+                                <input type="text" name="name" placeholder="Иван Иванович">
+                                <label>Номер телефона</label>
+                                <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __" required>
+                                <button type="submit" class="text-bold" style="border-bottom: 1px solid #96161d;
+    border-top: 4px solid #c3262e;
+    background: #96161d;
+    border: 1px solid #96161d;
+    border-bottom: 4px solid #c3262e;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 10px 0 7px;
+    border-radius: 5px;
+    transition: .3s;">Получить консультацию
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -863,9 +932,14 @@
                         <div class="forma text-center">
                             <div class="form-title">Успейте сэкономить! Бронирование 2019!</div>
                             <div class="form-title-before">
-                                <img src="/images/content/var5.jpg" alt="Акция в санатории Приморский">
+                                <div style="padding-bottom: 1px;background: rgba(245, 247, 246, 0.8);">
+                                    <p style="font-size: 23px;">
+                                        <span style="color: red">Акция</span> до конца недели!<br>
+                                        Путевки на осень 2019 <span style="color: red">со скидкой до -20%</span>
+                                    </p>
+                                </div>
                             </div>
-                            <form class="form datespeoplesphone">
+                            <form class="form js_datespeoplesphone">
                                 <input type="hidden" name="form_name" value="Форма внизу страницы">
                                 <input type="hidden" id="utm_term" name="utm_term">
                                 <input type="hidden" id="utm_source" name="utm_source">
@@ -873,54 +947,43 @@
                                 <input type="hidden" id="utm_content" name="utm_content">
                                 <input type="hidden" id="utm_campaign" name="utm_campaign">
                                 <input type="hidden" id="roistat" name="roistat">
-                                <span>Заполните формы и узнайте<br>
-                                            сниженную стоимость путёвки</span>
+                                <span>Заполните формы и узнайте<br> сниженную стоимость путёвки</span>
                                 <div class="row-fluid">
                                     <label>Выберите возможные даты бронирования</label>
                                     <div class="col-sm-6">
-                                        <input type="text" name="datestart" id="datep-on3" class="date" placeholder="c __.__.____">
+                                        <input type="text" name="datestart" id="datep-on3" class="date js_datepicker" placeholder="c __.__.____">
+
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" name="datefinish" id="datep-off3" class="date" placeholder="до __.__.____">
+                                        <input type="text" name="datefinish" id="datep-off3" class="date js_datepicker" placeholder="до __.__.____">
                                     </div>
                                 </div>
-                                {{--<div class="row-fluid">
+                                <div class="row-fluid">
                                     <div class="col-sm-8 col-sm-offset-2">
                                         <label>Выберите лечебный профиль:</label>
                                         <div class="clearfix"></div>
                                         <select name="profile">
-                                            <option value="Сердечно-сосудистая система">Сердечно-сосудистая система</option>
-                                            <option value="Опорно-двигательный аппарат">Опорно-двигательный аппарат</option>
-                                            <option value="Органы дыхания">Органы дыхания</option>
-                                            <option value="Верхние дыхательные пути">Верхние дыхательные пути</option>
-                                            <option value="Органы ЖКТ">Органы ЖКТ</option>
-                                            <option value="Нервная система">Нервная система</option>
-                                            <option value="Общетерапевтический профиль">Общетерапевтический профиль</option>
-                                            <option value="Органы пищеварения">Органы пищеварения</option>
-                                            <option value="Костно-мышечные болезни">Костно-мышечные болезни</option>
+                                            @foreach ($select_bolezni as $option)
+                                                <option value="{{ $option }}">{{ $option }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
-                                </div>--}}
+                                </div>
                                 <div class="row-fluid">
                                     <label>Выберите количество отдыхающих:</label>
                                     <div class="clearfix"></div>
                                     <div class="col-sm-6">
                                         <select name="people-val" class="select people">
-                                            <option value="1 взрослый">1 взрослый</option>
-                                            <option value="2 взрослых">2 взрослых</option>
-                                            <option value="3 взрослых">3 взрослых</option>
-                                            <option value="4 взрослых">4 взрослых</option>
-                                            <option value="5 взрослых">5 взрослых</option>
-                                            <option value="6 взрослых">6 взрослых</option>
+                                            @foreach ($select_adults as $option)
+                                                <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="col-sm-6">
                                         <select name="baby-val" class="select baby">
-                                            <option value="Без детей">Без детей</option>
-                                            <option value="1 ребенок">1 ребенок</option>
-                                            <option value="2 детей">2 детей</option>
-                                            <option value="3 детей">3 детей</option>
-                                            <option value="4 детей">4 детей</option>
+                                            @foreach ($select_childs as $option)
+                                                <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -928,14 +991,14 @@
                                     <label>Введите номер телефона для связи с Вами:</label>
                                     <div class="clearfix"></div>
                                     <div class="col-sm-8 col-sm-offset-2">
-                                        <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __" required>
+                                        <input type="text" name="phone" class="phone" placeholder="+_(___) ___ __ __">
                                     </div>
                                 </div>
                                 <div class="row-fluid">
                                     <button type="submit">Узнать сниженную стоимость</button>
                                 </div>
                                 <div class="row-fluid">
-                                    <span class="form-ob">Мы свяжемся с Вами в течение 20 минут и подберём предложение</span>
+                                    <span class="form-ob">* Нажимая на кнопку, я даю согласие на обработку персональных данных</span>
                                 </div>
                             </form>
                         </div>
@@ -957,7 +1020,7 @@
         <div class="container text-center">
             <div class="col-md-4">
                 <div class="logo">
-                    <img src="images/logo_footer.png" alt="лого в санатории Приморский">
+                    <img src="/images/logo_footer.png" alt="лого в санатории Приморский">
                 </div>
                 <div style="padding-top: 10px;">
                     <img src="/images/icon_visa.png" alt="">
@@ -1016,27 +1079,11 @@
 
 @include('sanprimorsky.popups')
 
-<button id="plavbutton" class="plav visible-md visible-lg" data-toggle="modal" data-target="#action" style="opacity: 0;"><b style="color:white;">Узнать цены</b></button>
+<button id="plavbutton" class="js_go2book plav visible-md visible-lg" style="opacity: 0;display:none"><b style="color:white;" class="">Перейти к бронированию и оплате</b></button>
 
 
 {{--<script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=5687957026635776"></script>--}}
-<script>
-    let btn = document.querySelector('#plavbutton');
 
-    window.onscroll = magic;
-
-    function magic() {
-        if (window.pageYOffset > 1000) {
-            btn.style.opacity = '1';
-        } else {
-            btn.style.opacity = '0';
-        }
-    }
-
-    btn.onclick = function () {
-        window.scrollTo(0, 0);
-    };
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 {{--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>--}}
@@ -1060,6 +1107,30 @@
 
     gtag('config', 'UA-119318306-1', {'optimize_id': 'GTM-PVMD2T3'});
 </script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(55131532, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/55131532" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
 
 </body>
 </html>

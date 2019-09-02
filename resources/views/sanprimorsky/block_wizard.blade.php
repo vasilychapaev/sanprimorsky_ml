@@ -1,7 +1,7 @@
 <div class="section calc">
     <div class="container">
         <h2 class="calc__title" id="wizard_h1">
-            Хотите подобрать программу отдыха<br>исходя из ваших заболеваний?
+            Рассчитайте стоимость путевки по Вашим параметрам за 1 минуту
         </h2>
         <div class="calc-form">
             <div class="wrapper">
@@ -46,12 +46,12 @@
                             <div class="form-holder">
                                 <label for="">Заезда</label>
                                 {{--                                <i class="zmdi zmdi-account"></i>--}}
-                                <input name="datestart" type="text" class="form-control js_datepicker" placeholder="21.09.2019">
+                                <input name="datestart" value="{{ \Carbon\Carbon::now()->addWeek(4)->format(config('custom.date_format')) }}" type="text" class="form-control js_datepicker" placeholder="20.09.2019">
                             </div>
                             <div class="form-holder">
                                 <label for="">Выезда</label>
                                 {{--                                <i class="zmdi zmdi-account"></i>--}}
-                                <input name="datefinish" type="text" class="form-control js_datepicker" placeholder="32.09.2019">
+                                <input name="datefinish" value="{{ \Carbon\Carbon::now()->addWeek(6)->format(config('custom.date_format')) }}" type="text" class="form-control js_datepicker" placeholder="30.09.2019">
                             </div>
                         </div>
 
@@ -64,29 +64,25 @@
                         <div class="form-row">
                             <div class="form-holder">
                                 <label for="">Взрослые</label>
-                                <select name="adult_count" class="form-control">
-                                    <option value="1">1 взрослый</option>
-                                    <option value="2">2 взрослых</option>
-                                    <option value="3">3 взрослых</option>
-                                    <option value="4">4 взрослых</option>
-                                    <option value="5">5 взрослых</option>
-                                    <option value="6">6 взрослых</option>
+                                <select name="adults_count" class="form-control">
+                                    @foreach ($select_adults as $option)
+                                        <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="form-holder">
-                                <label for="">Дети</label>
-                                <select name="child_count" class="form-control">
-                                    <option value="0">без детей</option>
-                                    <option value="1">1 ребенок</option>
-                                    <option value="2">2 ребенка</option>
-                                    <option value="3">3 ребенка</option>
-                                    <option value="4">4 ребенка</option>
+
+                                <label for="">Выберите профиль</label><br>
+                                <select name="bolezni" class="form-control js-select2_" {{--multiple="multiple"--}} >
+                                    @foreach ($select_bolezni as $option)
+                                        <option value="{{ $option }}">{{ $option }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
 
 
-                        <div class="form-row">
+                        {{--<div class="form-row">
                             <div class="form-holder">
                                 <label for="">Лечение для 1го взрослого</label>
                                 <select name="adult_cure[]" class="form-control">
@@ -103,27 +99,19 @@
                                     @endforeach
                                 </select>
                             </div>
-                        </div>
+                        </div>--}}
 
 
-                        {{--
                         <div class="form-row">
                             <div class="form-holder">
-                                <label for="">Профили лечения</label><br>
-                                <select name="" class="form-control js-select2" --}}{{--multiple="multiple"--}}{{-->
-                                    <option value="Сердечно-сосудистая система">Сердечно-сосудистая система</option>
-                                    <option value="Опорно-двигательный аппарат">Опорно-двигательный аппарат</option>
-                                    <option value="Органы дыхания">Органы дыхания</option>
-                                    <option value="Верхние дыхательные пути">Верхние дыхательные пути</option>
-                                    <option value="Органы ЖКТ">Органы ЖКТ</option>
-                                    <option value="Нервная система">Нервная система</option>
-                                    <option value="Общетерапевтический профиль">Общетерапевтический профиль</option>
-                                    <option value="Органы пищеварения">Органы пищеварения</option>
-                                    <option value="Костно-мышечные болезни">Костно-мышечные болезни</option>
+                                <label for="">Дети</label>
+                                <select name="childs_count" class="form-control">
+                                    @foreach ($select_childs as $option)
+                                        <option value="{{ $option['cnt'] }}">{{ $option['name'] }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
-                        --}}
 
                     </section>
 
@@ -141,18 +129,8 @@
                             </thead>
                             <tbody>
 
-                            @php
-                                $rooms = [
-                                    ['id'=>1, 'name'=>'Single', 'desc'=>'1мест-1комн', 'price'=>'3389', 'img'=>'/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
-                                        'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
-                                    ['id'=>2, 'name'=>'Twin', 'desc'=>'2мест-1комн', 'price'=>'2712', 'img'=>'/img/Apport/mini/img_9453_min.XY1QN.jpg',
-                                        'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
-                                    ['id'=>3, 'name'=>'Kingsize', 'desc'=>'2мест-2комн', 'price'=>'3723', 'img'=>'/img/Apport/mini/img_9382_min.wQvX1.jpg',
-                                        'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
-                                ];
-                            @endphp
 
-                            @foreach ($rooms as $room)
+                            @foreach ($select_rooms as $room)
                                 <tr>
                                     <td class="product-thumb">
                                         <a href="#" class="item-thumb">
@@ -206,6 +184,8 @@
                                     <th>Номер</th>
                                     <td>
                                         Twin, 2мест-2комн
+                                        <div id="room_leave">Осталось 2 последних номера!</div>
+
                                     </td>
                                 </tr>
                                 <tr class="order-total border-0">
@@ -218,6 +198,18 @@
                                     </td>
                                 </tr>
                             </table>
+
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <label for="">Фамилия и Имя</label>
+                                    <input name="fio" value="" placeholder="Иванов Иван">
+                                </div>
+                                <div class="form-holder">
+                                    <label for="">Телефон или email</label>
+                                    <input name="phone" value="" placeholder="+7 (921) 111-22-33">
+                                </div>
+                            </div>
+
                         </div>
                     </section>
                     {{--                    <input type="submit" name="submit" value="go">--}}

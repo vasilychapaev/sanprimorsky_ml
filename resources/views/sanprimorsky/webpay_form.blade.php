@@ -1,6 +1,6 @@
 <input type="hidden" name="*scart">
 <input type="hidden" name="wsb_storeid" value="{{ config('webpay.wsb_store_id') }}">
-<input type="hidden" name="wsb_store" value="{{ config('webpay.wsb_store_name') }}">
+{{--<input type="hidden" name="wsb_store" value="{{ config('webpay.wsb_store_name') }}">--}}
 <input type="hidden" name="wsb_order_num" value="{{ $order->id }}">
 <input type="hidden" name="wsb_currency_id" value="{{ config('webpay.wsb_currency_id') }}">
 <input type="hidden" name="wsb_version" value="{{ config('webpay.wsb_version') }}">

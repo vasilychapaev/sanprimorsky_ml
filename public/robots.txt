@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /send
+Disallow: /webpay
+Host: https://sanprimorsky.by
+Sitemap: https://sanprimorsky.by/sitemap.xml

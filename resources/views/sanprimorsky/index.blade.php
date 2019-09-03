@@ -8,8 +8,8 @@
     <meta name="description"
           content="Приобретайте путёвки в санаторий Приморский напрямую и без переплат. Официальный отдел реализации путёвок санатория Приморский Беларусь. У нас гарантия лучшей цены. Лечение в медицинском центре управления делами президента РБ. Более 20 лечебных процедур. Заходите!">
     <meta name="robots" content="index,follow"/>
-    <meta name="keywords"
-          content="санаторий в белоруссии, санаторий Приморский, купить путёвку в санаторий, оздоровительный санаторий, Санаторий приморский беларусь, санаторий в белоруссии лечение, санаторий в белоруссии цены"/>
+    <meta name="keywords" content="санаторий в белоруссии, санаторий Приморский, купить путёвку в санаторий, оздоровительный санаторий, Санаторий приморский беларусь, санаторий в белоруссии лечение, санаторий в белоруссии цены"/>
+    <meta name="yandex-verification" content="ce3dc4a5d529746a" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -66,12 +66,24 @@
         ['cnt'=>3, 'name'=>'3 ребенка'],
     ];
 
+    // RUB
+    /*
     $select_rooms = [
         ['id'=>1, 'name'=>'Single', 'desc'=>'1мест-1комн', 'price'=>'3389', 'img'=>'/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
         ['id'=>2, 'name'=>'Twin', 'desc'=>'2мест-1комн', 'price'=>'2712', 'img'=>'/img/Apport/mini/img_9453_min.XY1QN.jpg',
            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
         ['id'=>3, 'name'=>'Kingsize', 'desc'=>'2мест-2комн', 'price'=>'3723', 'img'=>'/img/Apport/mini/img_9382_min.wQvX1.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
+       ];
+    */
+    // BYN
+    $select_rooms = [
+        ['id'=>1, 'name'=>'Single', 'desc'=>'1мест-1комн', 'price'=>'51', 'img'=>'/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
+        ['id'=>2, 'name'=>'Twin', 'desc'=>'2мест-1комн', 'price'=>'41', 'img'=>'/img/Apport/mini/img_9453_min.XY1QN.jpg',
+           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
+        ['id'=>3, 'name'=>'Kingsize', 'desc'=>'2мест-2комн', 'price'=>'56', 'img'=>'/img/Apport/mini/img_9382_min.wQvX1.jpg',
            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
        ];
 @endphp
@@ -1023,10 +1035,7 @@
                     <img src="/images/logo_footer.png" alt="лого в санатории Приморский">
                 </div>
                 <div style="padding-top: 10px;">
-                    <img src="/images/icon_visa.png" alt="">
-                    <img src="/images/icon_mastercard.png" alt="">
-                    <img src="/images/icon_belcard.png" alt="">
-                    <img src="/images/icon_webpay.png" alt="">
+                    <img src="/images/icon_visa_group1.jpg" alt="" style="width:70%">
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-6">

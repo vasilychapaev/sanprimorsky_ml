@@ -192,7 +192,7 @@
                                     <th>Общая цена путевок</th>
                                     <td data-title="Total">
                                         <span class="woocommerce-Price-amount amount">
-                                            76800 руб
+                                            1568 бел.руб
                                             <input type="hidden" name="amount" value="76">
                                         </span>
                                     </td>

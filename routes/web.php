@@ -25,6 +25,7 @@ Auth::routes();
 //});
 
 Route::get('/', 'LandingController@sanprimorskyOld');
+Route::get('/2', 'LandingController@sanprimorskyOld');
 Route::get('/old/upd', 'LandingController@sanprimorskyOldUpd');
 Route::post('/old/send', 'LandingController@sanprimorskyOldSend');
 

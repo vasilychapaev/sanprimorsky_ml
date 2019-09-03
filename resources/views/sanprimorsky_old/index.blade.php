@@ -8,6 +8,9 @@
     <meta name="description" content="Приобретайте путёвки в санаторий Приморский напрямую и без переплат. Официальный отдел реализации путёвок санатория Приморский Беларусь. У нас гарантия лучшей цены. Лечение в медицинском центре управления делами президента РБ. Более 20 лечебных процедур. Заходите!">
     <meta name="robots" content="index,follow" />
     <meta name="keywords" content="санаторий в белоруссии, санаторий Приморский, купить путёвку в санаторий, оздоровительный санаторий, Санаторий приморский беларусь, санаторий в белоруссии лечение, санаторий в белоруссии цены" />
+    <meta name="yandex-verification" content="ce3dc4a5d529746a" />
+
+
     <link rel="stylesheet" href="/old/css/bootstrap.min.css">
     <!--
     <style>.async-hide { opacity: 0 !important} </style>
@@ -1798,10 +1801,7 @@
                 <img src="/old/img/logo_footer.png" alt="лого в санатории Приморский">
             </div>
             <div style="padding-top: 10px;">
-                <img src="/images/icon_visa.png" alt="">
-                <img src="/images/icon_mastercard.png" alt="">
-                <img src="/images/icon_belcard.png" alt="">
-                <img src="/images/icon_webpay.png" alt="">
+                <img src="/images/icon_group1.png" alt="">
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-6">

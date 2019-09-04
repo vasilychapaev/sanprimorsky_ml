@@ -85,6 +85,13 @@
 .calc-form {
     position: relative;
     background: #fff;
+    
+    @include media-breakpoint-down(tb) {
+        margin: 0 -30px;
+    }
+    @include media-breakpoint-down(phx) {
+        margin: 0;
+    }
 }
 
 .calc-form form input[type='checkbox'] {

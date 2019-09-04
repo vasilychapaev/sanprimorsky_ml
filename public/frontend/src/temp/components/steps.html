@@ -14,12 +14,12 @@
                 <div class="form-holder">
                     <label for="">Заезда</label>
 
-                    <input name="datestart" value="30.09.2019" type="text" class="form-control js_datepicker" placeholder="20.09.2019">
+                    <input name="datestart" value="02.10.2019" type="text" class="form-control js_datepicker" placeholder="20.09.2019">
                 </div>
                 <div class="form-holder">
                     <label for="">Выезда</label>
 
-                    <input name="datefinish" value="14.10.2019" type="text" class="form-control js_datepicker" placeholder="30.09.2019">
+                    <input name="datefinish" value="16.10.2019" type="text" class="form-control js_datepicker" placeholder="30.09.2019">
                 </div>
             </div>
 
@@ -77,86 +77,7 @@
         <h4></h4>
         <section>
             <h3 style="margin-bottom: 16px;">Номера</h3>
-            <table cellspacing="0" class="table-cart shop_table shop_table_responsive cart woocommerce-cart-form__contents table" id="shop_table">
-                <thead>
-                <th></th>
-                <th style="text-align: left;">Номер</th>
-                <th style="text-align: left;">Фичи</th>
-                <th style="text-align: center;">Цены</th>
-                <th>&nbsp;</th>
-                </thead>
-                <tbody>
-
-
-                <tr>
-                    <td class="product-thumb">
-                        <a href="#" class="item-thumb">
-                            <img src="https://sanprimorsky.by/img/Apport/mini/img_9407_0_min.Ep3AH.jpg" alt="">
-                        </a>
-                    </td>
-                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
-                        <div>
-                            <a href="#">Single</a>
-                            <span>1мест-1комн</span>
-                        </div>
-                    </td>
-                    <td class="product-quantity" data-title="Quantity">
-                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i>
-                    </td>
-                    <td class="total-price" data-title="Total Price">
-                        <span class="woocommerce-Price-amount amount">3389 руб</span>
-                    </td>
-                    <td class="product-remove">
-                        <input type="radio" name="room_id" value="1">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="product-thumb">
-                        <a href="#" class="item-thumb">
-                            <img src="https://sanprimorsky.by/img/Apport/mini/img_9453_min.XY1QN.jpg" alt="">
-                        </a>
-                    </td>
-                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
-                        <div>
-                            <a href="#">Twin</a>
-                            <span>2мест-1комн</span>
-                        </div>
-                    </td>
-                    <td class="product-quantity" data-title="Quantity">
-                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>
-                    </td>
-                    <td class="total-price" data-title="Total Price">
-                        <span class="woocommerce-Price-amount amount">2712 руб</span>
-                    </td>
-                    <td class="product-remove">
-                        <input type="radio" name="room_id" value="2">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="product-thumb">
-                        <a href="#" class="item-thumb">
-                            <img src="https://sanprimorsky.by/img/Apport/mini/img_9382_min.wQvX1.jpg" alt="">
-                        </a>
-                    </td>
-                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
-                        <div>
-                            <a href="#">Kingsize</a>
-                            <span>2мест-2комн</span>
-                        </div>
-                    </td>
-                    <td class="product-quantity" data-title="Quantity">
-                        <i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>
-                    </td>
-                    <td class="total-price" data-title="Total Price">
-                        <span class="woocommerce-Price-amount amount">3723 руб</span>
-                    </td>
-                    <td class="product-remove">
-                        <input type="radio" name="room_id" value="3">
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
+            @@include('table-rooms.html')
         </section>
 
         <h4></h4>
@@ -192,7 +113,7 @@
                         <th>Общая цена путевок</th>
                         <td data-title="Total">
                                         <span class="woocommerce-Price-amount amount">
-                                            76800 руб
+                                            1568 бел.руб
                                             <input type="hidden" name="amount" value="76">
                                         </span>
                         </td>

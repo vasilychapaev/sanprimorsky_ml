@@ -483,10 +483,11 @@
         </div>
     </div>
 -->
+<span id="calculator"></span>
 
 <div class="section calc">
     <div class="container">
-        <h2 class="text-center">
+        <h2 class="text-center" id="wizard_h1">
             Рассчитайте стоимость путевки</br>по Вашим параметрам за 1 минуту
         </h2>
         <div class="calc-form">
@@ -1801,7 +1802,7 @@
                 <img src="/old/img/logo_footer.png" alt="лого в санатории Приморский">
             </div>
             <div style="padding-top: 10px;">
-                <img src="/images/icon_group1.png" alt="">
+                <img src="/images/icon_visa_group1.jpg" alt="" style="width: 60%">
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-md-push-4 col-sm-push-6">
@@ -1878,8 +1879,11 @@
                 </p>
 
                 <h3>Возврат </h3>
-                <p>При оплате банковской платежной картой возврат денежных средств осуществляется за 30 дней до заезда на карточку, с которой была произведена оплата.</p>
-
+                <p>При оплате банковской платежной картой возврат денежных средств осуществляется на карточку, с которой была произведена оплата:<br>
+                    - более 30 дней до заезда - возврат 100%<br>
+                    - от 30 до 15 дней до заезда - возврат 70%<br>
+                    - менее 15 дней до заезда - 0% (нет возврата)<br>
+                </p>
 
             </div>
         </div>
@@ -2045,7 +2049,7 @@
 <script src="/old/js/bootstrap.min.js"></script>
 <script src="/old/js/jquery.maskedinput.min.js"></script>
 <script src="/old/js/jquery-ui.min.js"></script>
-<script src="/old/js/scripts.js"></script>
+<script src="/old/js/scripts.js?1"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script>
     var utm = {};
@@ -2217,87 +2221,24 @@ border: none;
             </div>
 
             <div class="modal-body forma" style="padding: 15px;text-align: center;font-size: 18px;">
-                <p><span style="color: red">Специальная программа!</span></p>
-                <p> <span style="font-weight: bold;color: red;">«Новогодняя ночь в санатории Приморском» </span><br>
-                    <span style="font-weight: bold;">доступна по цене раннего бронирования!</span><br>
-
-                    Специальный гость: звезда белорусской эстрады  </p>
-                <p> <span style="color: red;font-weight: bold;">Александр Солодуха </span></p>
-                <p>Узнайте программу новогодней ночи. </p>
-                <p>Для получения полной программы </p>
+                <p>
+                    <span style="font-weight: bold;color: red;">
+                        У нас можно забронировать путевку <br>
+                        по официальной цене санатория. <br>
+                    </span>
+                </p>
 
                 <form  class="form" style="background-color: transparent; padding: 0px 15px;">
                     <div class="col-xs-12">
                         <div class="type-svias">
-                            <label>
-                                <input type="radio" name="type_svias" id="phone" value="phone"  style="display: none;" checked>
-                                <img src="/old/img/telephoneDom.png" alt="По телефону" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="viber" value="Viber" style="display: none;">
-                                <img src="/old/img/viber.png" alt="Звоните Вайбер" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="wa" value="WhatsApp" style="display: none;">
-                                <img src="/old/img/wa.png" alt="Звоните вотсап" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="telega" value="Telegram" style="display: none;">
-                                <img src="/old/img/telega.png" alt="звоните телеграмм">
-                            </label>
-
-                            <style>
-                                label{
-                                    content: "";
-                                    display: inline-block;
-                                    /*position: absolute;*/
-                                    background: rgba(0,0,0,0);
-                                    position: relative;
-                                    cursor: pointer;
-                                }
-
-                                [type=radio] {
-                                    background: #fefefe;
-                                }
-
-                                [type=radio] + img {
-                                    cursor: pointer;
-                                }
-
-                                [type=radio]:checked + img {
-
-                                    background: rgba(255,255,255,.7);
-
-                                    /*background: #fefefe;*/
-                                    border: 1px solid #b2b3b3;
-                                    border-bottom: 4px solid #b2b3b3;
-                                    border-radius: 5px;
-                                    /*height: 55px;*/
-                                    position: relative;
-                                    cursor: pointer;
-                                }
-
-                            </style>
                         </div>
                     </div>
 
 
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <input type="hidden" name="form_name" value="Новогодняя ночь в санатории Приморском">
-                        <input type="hidden" id="utm_term" name="utm_term">
-                        <input type="hidden" id="utm_source" name="utm_source">
-                        <input type="hidden" id="utm_medium" name="utm_medium">
-                        <input type="hidden" id="utm_content" name="utm_content">
-                        <input type="hidden" id="utm_campaign" name="utm_campaign"><p></p>
-                        <p>Введите номер телефона: </p>
-                        <input type="text" name="phone" class="phone"   placeholder="+7(___) ___ __ __" required >
-                    </div>
 
                     <div class="row-fluid  " >
-                        <button type="submit">Посмотреть программу</button>
+                        <button id="soloduha_submit" type="submit"  data-dismiss="modal" >Посмотреть программу</button>
                     </div>
-                    <p style="font-size: 12px;">* Внимание! Осталось всего 7 подарков!<br>
-                        Акция действует при покупке путевки на осень 2019.</p>
                 </form>
             </div>
         </div>

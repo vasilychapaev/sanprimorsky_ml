@@ -79,12 +79,38 @@
     */
     // BYN
     $select_rooms = [
-        ['id'=>1, 'name'=>'Single', 'desc'=>'1мест-1комн', 'price'=>'51', 'img'=>'/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
-           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
-        ['id'=>2, 'name'=>'Twin', 'desc'=>'2мест-1комн', 'price'=>'41', 'img'=>'/img/Apport/mini/img_9453_min.XY1QN.jpg',
-           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
-        ['id'=>3, 'name'=>'Kingsize', 'desc'=>'2мест-2комн', 'price'=>'56', 'img'=>'/img/Apport/mini/img_9382_min.wQvX1.jpg',
-           'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
+        [
+            'id'=>1,
+            'name'=>'Single',
+            'desc'=>'1комнантный, 1-местный',
+            'price'=>'57',
+            'thumb'=>'https://sanprimorsky.by/old/img/Apport/mini/img_9407_0_min.Ep3AH.jpg',
+            'img'=>'http://sanprimorski.by/sites/default/files/images/room/img_9401_0.jpg',
+            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i>'],
+        [
+            'id'=>2,
+            'name'=>'Twin',
+            'desc'=>'1-комнатный, 2-местный',
+            'price'=>'38',
+            'thumb'=>'https://sanprimorsky.by/old/img/Apport/mini/img_9344_min.mn8Aj.jpg',
+            'img'=>'http://sanprimorski.by/sites/default/files/images/room/img_9354.jpg',
+            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
+        [
+            'id'=>3,
+            'name'=>'Kingsize',
+            'desc'=>'2-местный, 2-комнатный',
+            'price'=>'54',
+            'thumb'=>'https://sanprimorsky.by/old/img/Apport/mini/img_9453_min.XY1QN.jpg',
+            'img'=>'http://sanprimorski.by/sites/default/files/images/room/img_9453.jpg',
+            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i>'],
+        [
+            'id'=>4,
+            'name'=>'Lux',
+            'desc'=>'2-местный, 2-комнатный',
+            'price'=>'69',
+            'thumb'=>'https://sanprimorsky.by/old/img/Apport/mini/9392_min.0zf5w.jpg',
+            'img'=>'http://sanprimorski.by/sites/default/files/images/room/9392.jpg',
+            'icons'=>'<i class="fas fa-wifi"></i> <i class="fas fa-car"></i> <i class="fas fa-toilet"></i> <i class="fas fa-bath"></i> <i class="fas fa-tshirt"></i>'],
        ];
 @endphp
 
@@ -196,12 +222,12 @@
                                         </div>
                                     </div>
                                     <input type="hidden" name="form_name" value="Форма на превом экране">
-                                    <input type="hidden" id="utm_term" name="utm_term" value="undefined">
-                                    <input type="hidden" id="utm_source" name="utm_source" value="undefined">
-                                    <input type="hidden" id="utm_medium" name="utm_medium" value="undefined">
-                                    <input type="hidden" id="utm_content" name="utm_content" value="undefined">
-                                    <input type="hidden" id="utm_campaign" name="utm_campaign" value="undefined">
-                                    <input type="hidden" id="roistat" name="roistat">
+                                    <input type="hidden" name="utm_term" value="undefined">
+                                    <input type="hidden" name="utm_source" value="undefined">
+                                    <input type="hidden" name="utm_medium" value="undefined">
+                                    <input type="hidden" name="utm_content" value="undefined">
+                                    <input type="hidden" name="utm_campaign" value="undefined">
+                                    <input type="hidden" name="roistat">
                                     <div class="row-fluid">
                                         <button type="submit">Узнать сниженную стоимость</button>
                                     </div>
@@ -372,7 +398,7 @@
             </div>
         </div>
 
-        @include('sanprimorsky.block_wizard')
+        @include('sanprimorsky.wizard')
 
         <div class="section after-calc">
             <div class="container">
@@ -790,12 +816,12 @@
                         <div class="text-center col-sm-4">
                         <form class="form js_scroll2book">
                                 <input type="hidden" name="form_name" value="Форма особенности Приморского санатория">
-                                <input type="hidden" id="utm_term" name="utm_term">
-                                <input type="hidden" id="utm_source" name="utm_source">
-                                <input type="hidden" id="utm_medium" name="utm_medium">
-                                <input type="hidden" id="utm_content" name="utm_content">
-                                <input type="hidden" id="utm_campaign" name="utm_campaign">
-                                <input type="hidden" id="roistat" name="roistat">
+                                <input type="hidden" name="utm_term">
+                                <input type="hidden" name="utm_source">
+                                <input type="hidden" name="utm_medium">
+                                <input type="hidden" name="utm_content">
+                                <input type="hidden" name="utm_campaign">
+                                <input type="hidden" name="roistat">
                                 <label>Ваше Имя</label>
                                 <input type="text" name="name" placeholder="Иван Иванович">
                                 <label>Номер телефона</label>
@@ -956,12 +982,12 @@
                             </div>
                             <form class="form js_datespeoplesphone">
                                 <input type="hidden" name="form_name" value="Форма внизу страницы">
-                                <input type="hidden" id="utm_term" name="utm_term">
-                                <input type="hidden" id="utm_source" name="utm_source">
-                                <input type="hidden" id="utm_medium" name="utm_medium">
-                                <input type="hidden" id="utm_content" name="utm_content">
-                                <input type="hidden" id="utm_campaign" name="utm_campaign">
-                                <input type="hidden" id="roistat" name="roistat">
+                                <input type="hidden" name="utm_term">
+                                <input type="hidden" name="utm_source">
+                                <input type="hidden" name="utm_medium">
+                                <input type="hidden" name="utm_content">
+                                <input type="hidden" name="utm_campaign">
+                                <input type="hidden" name="roistat">
                                 <span>Заполните формы и узнайте<br> сниженную стоимость путёвки</span>
                                 <div class="row-fluid">
                                     <label>Выберите возможные даты бронирования</label>
@@ -1066,7 +1092,6 @@
 
                     Время работы: пн-пт 10:00-18:00, сб 10:00-16:00.<br>
                     <a href="#" style="color: white" data-toggle="modal" data-target="#webpay_uslovia">Условия оплаты</a>
-
 
                 </div>
             </div>

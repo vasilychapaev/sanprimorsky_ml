@@ -122,34 +122,31 @@
                     <section>
                         <h3 style="margin-bottom: 16px;">Номера</h3>
                         <table cellspacing="0" class="table-cart shop_table shop_table_responsive cart woocommerce-cart-form__contents table" id="shop_table">
-                            <thead>
+
+                            {{--<thead>
                             <th></th>
                             <th style="text-align: left;">Номер</th>
-                            <th style="text-align: left;">Фичи</th>
                             <th style="text-align: center;">Цены</th>
                             <th>&nbsp;</th>
-                            </thead>
+                            </thead>--}}
+
                             <tbody>
 
 
                             @foreach ($select_rooms as $room)
-                                <tr>
-                                    <td class="product-thumb">
-                                        <a href="#" class="item-thumb">
-                                            <img src="{{ $room['img'] }}" alt="">
-                                        </a>
+                                <tr class="room">
+                                    <td class="thumb">
+                                        <a data-fancybox="gallery" href="{{ $room['img'] }}"><img src="{{ $room['thumb'] }}" alt="Люкс Санаторий Приморский"></a>
                                     </td>
-                                    <td class="product-detail" data-title="Product Detail" style="padding-left: 5px">
+                                    <td class="description" data-title="">
                                         <div>
-                                            <a href="#">{{ $room['name'] }}</a>
-                                            <span>{{ $room['desc'] }}</span>
+                                            Номер <b>{{ $room['name'] }}</b><br>
+                                            {{ $room['desc'] }}
+                                            {{--{!! $room['icons'] !!}--}}
                                         </div>
                                     </td>
-                                    <td class="product-quantity" data-title="Quantity">
-                                        {!! $room['icons'] !!}
-                                    </td>
-                                    <td class="total-price" data-title="Total Price">
-                                        <span class="woocommerce-Price-amount amount">{{ $room['price'] }} руб</span>
+                                    <td class="price" data-title="">
+                                        Цена <b>{{ $room['price'] }} бел.руб</b>
                                     </td>
                                     <td class="product-remove">
                                         <input type="radio" name="room_id" value="{{ $room['id'] }}">

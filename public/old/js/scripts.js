@@ -212,4 +212,14 @@ $('form').submit(function(){
     $('#video').on('hidden.bs.modal', function (e) {
         $('#video .video').empty();
     });
+
+
+    function scroll2book() {
+        $([document.documentElement, document.body]).animate({scrollTop: $("#wizard_h1").offset().top}, 1000);
+    }
+    $('#soloduha_submit').on('click', function(e) {
+        e.preventDefault();
+        scroll2book();
+    });
+
 });

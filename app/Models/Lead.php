@@ -142,7 +142,11 @@ class Lead extends Model
             . $profile . $price_start . $price_finish
             . $people_val . $adge_people . $baby_val . $adge_baby
             . $type_svias . $phone . $message
-            . $utm_campaign . $utm_content . $utm_medium . $utm_source . $utm_term . '</body>';
+            . "utm_campaign:".$utm_campaign.'<br>'.PHP_EOL
+            . "utm_content:".$utm_content.'<br>'.PHP_EOL
+            . "utm_medium:".$utm_medium.'<br>'.PHP_EOL
+            . "utm_source".$utm_source.'<br>'.PHP_EOL
+            . "utm_term".$utm_term . '</body>';
 
 
         Mail::send('sanprimorsky_old.email_form',
@@ -150,13 +154,17 @@ class Lead extends Model
             function ($email) use ($form_name) {
                 $email->from(config('sanprimorsky.email_from'))
                     ->to(config('sanprimorsky.email_to'))
+//                    ->to('vasilychapaev@gmail.com')
                     ->subject($form_name);
             });
 
-        return ['status'=>'GOOD'];
+        return [
+            'status'=>'GOOD',
+            'postcomment'=> htmlspecialchars($postdatestart.$postdatefinish.$postprofile.$postprice_start.$postprice_finish.$postpeople_val.$postadge_people.$postbaby_val.$postadge_baby.$posttype_svias.$postmessage)
+        ];
     }
 
-    static public function sendAmo()
+    static public function sendAmo($postcomment)
     {
 //        error_reporting(0);
 
@@ -174,7 +182,17 @@ class Lead extends Model
         $postform = htmlspecialchars($_POST["form_name"]);
         $postfio = htmlspecialchars($_POST["name"]);
         $postemail = htmlspecialchars($_POST["email"]);
-        $postcomment = htmlspecialchars($postdatestart.$postdatefinish.$postprofile.$postprice_start.$postprice_finish.$postpeople_val.$postadge_people.$postbaby_val.$postadge_baby.$posttype_svias.$postmessage);
+//        $postcomment = htmlspecialchars($postdatestart.$postdatefinish.$postprofile.$postprice_start.$postprice_finish.$postpeople_val.$postadge_people.$postbaby_val.$postadge_baby.$posttype_svias.$postmessage);
+
+        $form_name = htmlspecialchars($_POST["form_name"]);
+
+        $utm_term = htmlspecialchars($_POST['utm_term']);
+        $utm_source = htmlspecialchars($_POST['utm_source']);
+        $utm_medium = htmlspecialchars($_POST['utm_medium']);
+        $utm_content = htmlspecialchars($_POST['utm_content']);
+        $utm_campaign = htmlspecialchars($_POST['utm_campaign']);
+        $roistat = htmlspecialchars($_POST['roistat']);
+
 
         // $postphone = "79816890237";
         // $postsite = "Приморский";

@@ -161,7 +161,7 @@
                 </p>
 
 
-                <h3>Оплата Webpay</h3>
+                <h3>Оплата осуществляется банковской картой через систему Webpay</h3>
                 <p>Безопасный сервер WEBPAY устанавливает шифрованное соединение по защищенному протоколу TLS и конфиденциально принимает от клиента данные его платёжной карты (номер карты, имя держателя, дату окончания действия, и контрольный номер банковской карточке CVC/CVC2).
                     После совершения оплаты с использованием банковской карты необходимо сохранять полученные карт-чеки (подтверждения об оплате, полученные в Интернет-магазине) для
                     сверки с выпиской из карт-счёта (с целью подтверждения совершённых операций в случае возникновения спорных ситуаций)".
@@ -211,87 +211,25 @@ border: none;
             </div>
 
             <div class="modal-body forma" style="padding: 15px;text-align: center;font-size: 18px;">
-                <p><span style="color: red">Специальная программа!</span></p>
-                <p> <span style="font-weight: bold;color: red;">«Новогодняя ночь в санатории Приморском» </span><br>
-                    <span style="font-weight: bold;">доступна по цене раннего бронирования!</span><br>
-
-                    Специальный гость: звезда белорусской эстрады  </p>
-                <p> <span style="color: red;font-weight: bold;">Александр Солодуха </span></p>
-                <p>Узнайте программу новогодней ночи. </p>
-                <p>Для получения полной программы </p>
+                <p>
+                    <span style="font-weight: bold;color: red;">
+                        У нас можно забронировать путевку <br>
+                        по официальной цене санатория<br>
+                        и оплатить онлайн. <br>
+                    </span>
+                </p>
 
                 <form  class="form" style="background-color: transparent; padding: 0px 15px;">
                     <div class="col-xs-12">
                         <div class="type-svias">
-                            <label>
-                                <input type="radio" name="type_svias" id="phone" value="phone"  style="display: none;" checked>
-                                <img src="/img/telephoneDom.png" alt="По телефону" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="viber" value="Viber" style="display: none;">
-                                <img src="/img/viber.png" alt="Звоните Вайбер" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="wa" value="WhatsApp" style="display: none;">
-                                <img src="/img/wa.png" alt="Звоните вотсап" >
-                            </label>
-                            <label>
-                                <input type="radio" name="type_svias" id="telega" value="Telegram" style="display: none;">
-                                <img src="/img/telega.png" alt="звоните телеграмм">
-                            </label>
 
-                            <style>
-                                label{
-                                    content: "";
-                                    display: inline-block;
-                                    /*position: absolute;*/
-                                    background: rgba(0,0,0,0);
-                                    position: relative;
-                                    cursor: pointer;
-                                }
-
-                                [type=radio] {
-                                    background: #fefefe;
-                                }
-
-                                [type=radio] + img {
-                                    cursor: pointer;
-                                }
-
-                                [type=radio]:checked + img {
-
-                                    background: rgba(255,255,255,.7);
-
-                                    /*background: #fefefe;*/
-                                    border: 1px solid #b2b3b3;
-                                    border-bottom: 4px solid #b2b3b3;
-                                    border-radius: 5px;
-                                    /*height: 55px;*/
-                                    position: relative;
-                                    cursor: pointer;
-                                }
-
-                            </style>
                         </div>
                     </div>
 
 
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <input type="hidden" name="form_name" value="Новогодняя ночь в санатории Приморском">
-                        <input type="hidden" id="utm_term" name="utm_term">
-                        <input type="hidden" id="utm_source" name="utm_source">
-                        <input type="hidden" id="utm_medium" name="utm_medium">
-                        <input type="hidden" id="utm_content" name="utm_content">
-                        <input type="hidden" id="utm_campaign" name="utm_campaign"><p></p>
-                        <p>Введите номер телефона: </p>
-                        <input type="text" name="phone" class="phone" placeholder="+7(___) ___ __ __" required >
+                    <div class="row-fluid">
+                        <button id="soloduha_submit" type="submit"  data-dismiss="modal"  onclick="yaCounter55131532.reachGoal('popup');return true;">Перейти к бронированию</button>
                     </div>
-
-                    <div class="row-fluid  " >
-                        <button type="submit"  onclick="yaCounter55131532.reachGoal('popup');location.href='/old/Primorsky.pdf';">Посмотреть программу</button>
-                    </div>
-                    <p style="font-size: 12px;">* Внимание! Осталось всего 7 подарков!<br>
-                        Акция действует при покупке путевки на осень 2019.</p>
                 </form>
             </div>
         </div>

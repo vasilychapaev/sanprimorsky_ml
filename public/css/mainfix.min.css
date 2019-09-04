@@ -1,3 +1,14 @@
 #room_leave { color: red }
 
 
+.calc-form table.cart td {
+    padding: 10px 0;
+    width: 25px;
+}
+.room .description div {
+    margin: 10px 0 8px 10px;
+}
+.room .price {
+    padding: 30px 0 0 0 !important;
+}
+

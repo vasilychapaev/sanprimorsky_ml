@@ -24,7 +24,7 @@ class LandingController extends Controller
     {
         error_reporting(E_ALL ^ E_NOTICE);
         $resultMail = Lead::sendMail();
-        $resultAmo = Lead::sendAmo();
+        $resultAmo = Lead::sendAmo($resultMail['postcomment']);
 
         return $resultMail['status'];
     }

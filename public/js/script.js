@@ -45,6 +45,11 @@ $(document).ready(function () {
         scroll2book();
     });
 
+    $('#soloduha_submit').on('click', function (e) {
+        e.preventDefault();
+        scroll2book();
+    });
+
 
     // btn.Перейти к брони
     let btn = document.querySelector('#plavbutton');
@@ -102,6 +107,10 @@ $(document).ready(function () {
     function popupSoloduha() {
         $('#global-modal').modal('show');
     }
-    setTimeout(popupSoloduha, 25000);
+    setTimeout(popupSoloduha, 1000 * 60); // ms1000 * sec
+
+    $('.room').on('click', 'td', function() {
+
+    });
 
 });

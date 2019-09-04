@@ -781,11 +781,14 @@
                         <div class="number clearfix text-center">
                             <img src="/images/icons/icons-seti.png" alt="Российский телефон санатория Примосркий">&nbsp;<a href="tel:+7 499 938 43 43" id="podmena">+7 499 938 43 43</a>
                         </div>--}}
-                        <h3 class="text-center"><p>Остались вопросы?</br>
-                                Получите бесплатную консультацию от нашего менеджера.</p></h3>
-                        <div class="text-center col-xs-6 col-sm-4"></div>
-                        <div class="text-center col-xs-6 col-sm-4">
-                            <form class="form js_scroll2book">
+                        <h3 class="text-center">
+                            <p>Остались вопросы?</br>
+                                Получите бесплатную консультацию от нашего менеджера.
+                            </p>
+                        </h3>
+                        <div class="text-center col-sm-4"></div>
+                        <div class="text-center col-sm-4">
+                        <form class="form js_scroll2book">
                                 <input type="hidden" name="form_name" value="Форма особенности Приморского санатория">
                                 <input type="hidden" id="utm_term" name="utm_term">
                                 <input type="hidden" id="utm_source" name="utm_source">

@@ -14,11 +14,11 @@ class LandingController extends Controller
         return view('sanprimorsky_old.index');
     }
 
-    public function sanprimorskyOldUpd()
-    {
-//        dd(md5('ghkgo35'));
-        return view('sanprimorsky_old.index_new');
-    }
+//    public function sanprimorskyOldUpd()
+//    {
+////        dd(md5('ghkgo35'));
+//        return view('sanprimorsky_old.index_new');
+//    }
 
     public function sanprimorskyOldSend(Request $request)
     {

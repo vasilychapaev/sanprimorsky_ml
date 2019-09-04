@@ -24,16 +24,21 @@ Auth::routes();
 //    dd('land current');
 //});
 
-Route::get('/', 'LandingController@sanprimorskyOld');
+// original
+//Route::get('/', 'LandingController@sanprimorskyOld');
 Route::get('/2', 'LandingController@sanprimorskyOld');
-Route::get('/old/upd', 'LandingController@sanprimorskyOldUpd');
 Route::post('/old/send', 'LandingController@sanprimorskyOldSend');
 
-Route::get('/1', 'LandingController@sanprimorsky');
+Route::get('/', 'LandingController@sanprimorsky');
+//Route::get('/1', 'LandingController@sanprimorsky');
 Route::post('/send', 'LandingController@send');
 
 Route::post('/webpay/order', 'WebpayController@order');
-Route::get('/1/webpay/return', 'WebpayController@return');
-Route::get('/1/webpay/cancel', 'WebpayController@cancel');
-Route::get('/1/webpay/notify', 'WebpayController@notify'); // ? get/post
-Route::get('/1/webpay/check', 'WebpayController@check'); // надо? или в return > check
+Route::get('/webpay/return', 'WebpayController@return');
+Route::get('/webpay/cancel', 'WebpayController@cancel');
+Route::get('/webpay/notify', 'WebpayController@notify'); // ? get/post
+Route::get('/webpay/check', 'WebpayController@check'); // надо? или в return > check
+//Route::get('/1/webpay/return', 'WebpayController@return');
+//Route::get('/1/webpay/cancel', 'WebpayController@cancel');
+//Route::get('/1/webpay/notify', 'WebpayController@notify');
+//Route::get('/1/webpay/check', 'WebpayController@check');

@@ -69,7 +69,10 @@ $(document).ready(function () {
 
 
     $('.js_datepicker').datepicker({
-        dateFormat: 'dd.mm.yy'
+        dateFormat: 'dd.mm.yy',
+        minDate: 0,
+        monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
     });
 
 

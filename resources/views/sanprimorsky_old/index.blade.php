@@ -2294,7 +2294,7 @@ border: none;
                     </div>
 
                     <div class="row-fluid  " >
-                        <button type="submit"  onclick="location.href='/old/Primorsky.pdf';">Посмотреть программу</button>
+                        <button type="submit">Посмотреть программу</button>
                     </div>
                     <p style="font-size: 12px;">* Внимание! Осталось всего 7 подарков!<br>
                         Акция действует при покупке путевки на осень 2019.</p>

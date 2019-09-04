@@ -1,3 +1,5 @@
+<span id="calculator"></span>
+
 <div class="section calc">
     <div class="container">
         <h2 class="calc__title" id="wizard_h1">
